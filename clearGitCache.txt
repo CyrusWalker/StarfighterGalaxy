@@ -1,0 +1,6 @@
+#this could be useful when updating .gitignore
+# Note: commit all code changes, and then run the above git command.
+
+git rm -r --cached . 
+git add .
+git commit -m ‘gitignore Updated'
