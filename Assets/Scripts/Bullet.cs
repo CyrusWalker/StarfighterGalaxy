@@ -16,4 +16,12 @@ public class Bullet : MonoBehaviour
     void OnBecameInvisible() {
         Destroy(gameObject);
     }
+
+    void onCollisionEnter(Collision collision) {
+        var target = collision.gameObject;
+        if(collision.gameObject.tag == "Enemy") {
+            Destroy(target);
+            Destroy(gameObject);
+        }
+    }
 }

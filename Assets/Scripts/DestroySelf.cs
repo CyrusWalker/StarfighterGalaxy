@@ -9,9 +9,9 @@ public class DestroySelf : MonoBehaviour
         Destroy(gameObject);
     }
 
-    void Update() {
+    /*void Update() {
         if(Input.GetKeyDown("space")) {
             Kill();
         }
-    }
+    }*/
 }
