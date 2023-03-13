@@ -22,7 +22,7 @@ public class PixelPerfectCamera : MonoBehaviour
         if (Camera.main==null) {
             Debug.LogError("Camera.main not found, failed to create edge colliders"); return;
         }
-
+    
         var cam = Camera.main;
 
         if (!cam.orthographic) {
@@ -39,5 +39,8 @@ public class PixelPerfectCamera : MonoBehaviour
 
         var edgePoints = new [] {bottomLeft,topLeft,topRight,bottomRight, bottomLeft};
         edge.points = edgePoints;
+
+        edge.isTrigger = true;
     }
+    
 }

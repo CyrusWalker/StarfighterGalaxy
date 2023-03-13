@@ -352,6 +352,10 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5827186465532462804, guid: 9d3c594d7e5f948438315a280620e667, type: 3}
+      propertyPath: m_UsedByEffector
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5827186465532462807, guid: 9d3c594d7e5f948438315a280620e667, type: 3}
       propertyPath: m_Simulated
       value: 1
@@ -380,7 +384,8 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Enemy
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5827186465532462800, guid: 9d3c594d7e5f948438315a280620e667, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 9d3c594d7e5f948438315a280620e667, type: 3}
 --- !u!1001 &1523666247
 PrefabInstance:

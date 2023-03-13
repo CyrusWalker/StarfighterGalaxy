@@ -17,11 +17,9 @@ public class Bullet : MonoBehaviour
         Destroy(gameObject);
     }
 
-    void onCollisionEnter(Collision collision) {
-        var target = collision.gameObject;
-        if(collision.gameObject.tag == "Enemy") {
-            Destroy(target);
-            Destroy(gameObject);
-        }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        Destroy(collision.gameObject);
+        Destroy(gameObject);
     }
 }
