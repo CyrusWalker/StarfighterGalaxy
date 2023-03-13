@@ -16,7 +16,7 @@ public class PixelPerfectCamera : MonoBehaviour
             pixelsToUnits *= scale;
             camera.orthographicSize = (Screen.height / 2.0f) / pixelsToUnits;
         }
-        AddCollider();
+        // AddCollider();
     }
     public void AddCollider() {
         if (Camera.main==null) {
