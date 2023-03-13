@@ -21,13 +21,13 @@ public class Weapon : MonoBehaviour
     void Update()
     {
 
-        if (Input.GetButtonDown("Fire1"))
-        {
-            Shoot();
-        }
+        // if (Input.GetButtonDown("Fire1"))
+        // {
+        //     Shoot();
+        // }
     }
 
-    void Shoot()
+    public void Shoot()
     { 
         
         if (FirePointNum.ToString() == "One")
