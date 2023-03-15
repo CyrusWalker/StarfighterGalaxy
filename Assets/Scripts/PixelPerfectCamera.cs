@@ -40,7 +40,7 @@ public class PixelPerfectCamera : MonoBehaviour
         var edgePoints = new [] {bottomLeft,topLeft,topRight,bottomRight, bottomLeft};
         edge.points = edgePoints;
 
-        edge.isTrigger = true;
+        edge.isTrigger = false;
     }
     
 }

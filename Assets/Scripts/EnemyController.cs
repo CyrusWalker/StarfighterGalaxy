@@ -10,11 +10,14 @@ public class EnemyController : MonoBehaviour
     private Rigidbody2D rb;
     public float speedY = 1f;
     public float speedX = 1f;
+    public int yValMin;
+    public int yValMax;
+    private int yVal;
 
     // Start is called before the first frame update
     void Start()
     {
-        cam = Camera.main;
+        yVal = Random.Range(yValMin,yValMax);
         rb = GetComponent<Rigidbody2D>();
     }
 
@@ -22,7 +25,7 @@ public class EnemyController : MonoBehaviour
     void Update()
     {
         
-        if (transform.position.y > 0)
+        if (transform.position.y > yVal)
         {
             rb.velocity = new Vector2(speedX, -speedY);
         }
@@ -36,4 +39,15 @@ public class EnemyController : MonoBehaviour
     {
         speedX = -speedX;
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        speedX = -speedX;
+    }
+
+    void OnBecameInvisible()
+    {
+        Destroy(gameObject);
+    }
+
 }
