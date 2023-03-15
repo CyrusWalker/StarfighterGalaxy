@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -35,6 +36,12 @@ public class EnemyController : MonoBehaviour
         // {
         //     speedX = -speedX;
         // }
-        rb.velocity = new Vector2(0f, -speedY);
+        
+        rb.velocity = new Vector2(speedX, 0);
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        speedX = -speedX;
     }
 }

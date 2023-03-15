@@ -9,6 +9,8 @@ public class EnemySpawner : MonoBehaviour
     private Vector2 spawnPosition;
     public float spawnRate = 2.0f;
     private float nextSpawn = 0.0f;
+    private int spawnCount = 0;
+    public int spawnMax = 5;
 
     public List<GameObject> enemyList;
     private GameObject randomEnemy;
@@ -31,10 +33,14 @@ public class EnemySpawner : MonoBehaviour
     {
         if (Time.time > nextSpawn)
         {
-            nextSpawn = Time.time + spawnRate;
-            randPosition = Random.Range(-2.4f, 2.4f);
-            spawnPosition = new Vector2(randPosition, 0);
-            Instantiate(RandomEnemy(), spawnPosition, Quaternion.identity, this.transform);
+            if (spawnCount < spawnMax)
+            {
+                nextSpawn = Time.time + spawnRate;
+                randPosition = Random.Range(-50f, 50f);
+                spawnPosition = new Vector2(randPosition, 50f);
+                Instantiate(RandomEnemy(), spawnPosition, Quaternion.identity, this.transform);
+                spawnCount++;
+            }
         }
     }
     

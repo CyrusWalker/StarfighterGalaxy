@@ -100,7 +100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speedY: 8
-  speedX: 1
+  speedX: 10
 --- !u!50 &5143455777113064716
 Rigidbody2D:
   serializedVersion: 4
