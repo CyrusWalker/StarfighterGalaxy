@@ -8,10 +8,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1890594114586739537}
-  - component: {fileID: 5827186465532462805}
-  - component: {fileID: 5827186465532462804}
-  - component: {fileID: 5827186465532462807}
+  - component: {fileID: 5929701325997311485}
+  - component: {fileID: 637588233182457151}
   m_Layer: 0
   m_Name: Enemy Prefab
   m_TagString: Enemy
@@ -97,10 +95,9 @@ GameObject:
   - component: {fileID: 5358289960360976700}
   - component: {fileID: 53645411675432121}
   - component: {fileID: 53645411675432122}
-  - component: {fileID: 53645411675432125}
   m_Layer: 0
   m_Name: Enemy Prefab 6
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -168,4 +165,3 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
-
