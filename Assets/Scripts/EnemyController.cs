@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class EnemyController : MonoBehaviour
 {
@@ -10,7 +11,6 @@ public class EnemyController : MonoBehaviour
     public float speedY = 1f;
     public float speedX = 1f;
 
-    private float halfScreen = (Screen.height / 2.0f);
     // Start is called before the first frame update
     void Start()
     {
@@ -21,23 +21,15 @@ public class EnemyController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // if (transform.position.x < cam.transform.position.x)
-        // {
-        //     if (transform.position.y > halfScreen)
-        //     {
-        //         rb.velocity = new Vector2(speedX, -speedY);
-        //     }
-        //     else
-        //     {
-        //         rb.velocity = new Vector2(speedX, 0f);
-        //     }
-        // }
-        // else
-        // {
-        //     speedX = -speedX;
-        // }
         
-        rb.velocity = new Vector2(speedX, 0);
+        if (transform.position.y > 0)
+        {
+            rb.velocity = new Vector2(speedX, -speedY);
+        }
+        else
+        {
+            rb.velocity = new Vector2(speedX, 0f);
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
