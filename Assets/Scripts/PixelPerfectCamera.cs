@@ -34,8 +34,12 @@ public class PixelPerfectCamera : MonoBehaviour
         var topRight = (Vector2)cam.ScreenToWorldPoint(new Vector3(cam.pixelWidth, cam.pixelHeight, cam.nearClipPlane));
         var bottomRight = (Vector2)cam.ScreenToWorldPoint(new Vector3(cam.pixelWidth, 0, cam.nearClipPlane));
 
-            // add or use existing EdgeCollider2D
-        var edge = GetComponent<EdgeCollider2D>() == null ? gameObject.AddComponent<EdgeCollider2D>() : GetComponent<EdgeCollider2D>();
+        var edge;
+        if(GetComponent<EdgeCollider2D>() == null) {
+            edge = gameObject.AddComponent<EdgeCollider2D>();
+        } else {
+            edge = GetComponent<EdgeCollider2D>();
+        }
 
         var edgePoints = new [] {bottomLeft,topLeft,topRight,bottomRight, bottomLeft};
         edge.points = edgePoints;
