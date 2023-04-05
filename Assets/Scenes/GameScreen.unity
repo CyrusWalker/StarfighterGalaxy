@@ -385,6 +385,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: Shoot
       objectReference: {fileID: 0}
+    - target: {fileID: 6265626025156374487, guid: 0ab1335e6e50f4cc6918a71cd45c9c76, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 58be367e52f02ac418c775afde257ca4, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0ab1335e6e50f4cc6918a71cd45c9c76, type: 3}
 --- !u!114 &900915676 stripped
@@ -421,6 +425,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1518186580}
     m_Modifications:
+    - target: {fileID: 2929252283123773937, guid: aaa2c939c0359ac4dbce3f49e8b90252, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 3714a706c5d982746906d70c519249ec, type: 3}
     - target: {fileID: 2929252283123773938, guid: aaa2c939c0359ac4dbce3f49e8b90252, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -525,6 +533,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2929252285020698103, guid: aaa2c939c0359ac4dbce3f49e8b90252, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 1e36476c8562f8b4a9651d2dbcadc94a, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aaa2c939c0359ac4dbce3f49e8b90252, type: 3}
 --- !u!1 &1073352570
