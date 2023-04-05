@@ -5,19 +5,35 @@ public class PixelPerfectCamera : MonoBehaviour
 {
     public static float pixelsToUnits = 1f;
     public static float scale = 1f;
+    public static bool restarted = false;
 
     public Vector2 nativeResolution = new Vector2(240, 160);
 
-    void Awake() {
+    void Awake() 
+    {
+        CameraSetup();
+        if (restarted == false)
+        {
+            AddCollider();
+            restarted = true;
+            Debug.Log("Awake Called");
+        }
+        
+    }
+
+    public void CameraSetup()
+    {
         var camera = GetComponent<Camera> ();
 
         if(camera.orthographic) {
             scale = Screen.height/nativeResolution.y;
-            pixelsToUnits *= scale;
+            if (restarted == false)
+                pixelsToUnits *= scale;
+            
             camera.orthographicSize = (Screen.height / 2.0f) / pixelsToUnits;
         }
-        AddCollider();
     }
+
     public void AddCollider() {
         if (Camera.main==null) {
             Debug.LogError("Camera.main not found, failed to create edge colliders"); return;
@@ -33,6 +49,12 @@ public class PixelPerfectCamera : MonoBehaviour
         var topLeft = (Vector2)cam.ScreenToWorldPoint(new Vector3(0, cam.pixelHeight, cam.nearClipPlane));
         var topRight = (Vector2)cam.ScreenToWorldPoint(new Vector3(cam.pixelWidth, cam.pixelHeight, cam.nearClipPlane));
         var bottomRight = (Vector2)cam.ScreenToWorldPoint(new Vector3(cam.pixelWidth, 0, cam.nearClipPlane));
+        
+        // Debug.Log(bottomLeft);
+        // Debug.Log(topLeft);
+        // Debug.Log(topRight);
+        // Debug.Log(bottomRight);
+
 
             // add or use existing EdgeCollider2D
         var edge = GetComponent<EdgeCollider2D>() == null ? gameObject.AddComponent<EdgeCollider2D>() : GetComponent<EdgeCollider2D>();
