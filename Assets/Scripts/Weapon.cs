@@ -19,16 +19,6 @@ public class Weapon : MonoBehaviour
     public GameObject bulletPrefab;
     public Button ShootButton;
 
-    // Update is called once per frame
-    void Update()
-    {
-
-        // if (Input.GetButtonDown("Fire1"))
-        // {
-        //     Shoot();
-        // }
-    }
-
     public void Shoot()
     { 
         

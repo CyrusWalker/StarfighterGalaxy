@@ -56,8 +56,12 @@ public class PixelPerfectCamera : MonoBehaviour
         // Debug.Log(bottomRight);
 
 
-            // add or use existing EdgeCollider2D
-        var edge = GetComponent<EdgeCollider2D>() == null ? gameObject.AddComponent<EdgeCollider2D>() : GetComponent<EdgeCollider2D>();
+        var edge;
+        if(GetComponent<EdgeCollider2D>() == null) {
+            edge = gameObject.AddComponent<EdgeCollider2D>();
+        } else {
+            edge = GetComponent<EdgeCollider2D>();
+        }
 
         var edgePoints = new [] {bottomLeft,topLeft,topRight,bottomRight, bottomLeft};
         edge.points = edgePoints;
