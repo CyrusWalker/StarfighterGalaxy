@@ -5,7 +5,7 @@ using UnityEngine.UIElements;
 
 public class EnemySpawner : MonoBehaviour
 {
-    private float randPosition;
+    private float randPositionX;
     private Vector2 spawnPosition;
     public float spawnRate = 2.0f;
     private float nextSpawn = 0.0f;
@@ -36,8 +36,8 @@ public class EnemySpawner : MonoBehaviour
             if (spawnCount < spawnMax)
             {
                 nextSpawn = Time.time + spawnRate;
-                randPosition = Random.Range(-50f, 50f);
-                spawnPosition = new Vector2(randPosition, 50f);
+                randPositionX = Random.Range(-50f, 50f);
+                spawnPosition = new Vector2(randPositionX, 50f);
                 Instantiate(RandomEnemy(), spawnPosition, Quaternion.identity, this.transform);
                 spawnCount++;
             }

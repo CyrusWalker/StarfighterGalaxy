@@ -6,29 +6,30 @@ public class PlayerMovement : MonoBehaviour
 {
     public FixedJoystick Joystick;
     public float moveSpeed;
-    Vector2 move;
-    Rigidbody2D rb;
+    Vector2 movementDirection;
+    Rigidbody2D playerBody;
 
     public static bool PointerDown = false;
 
     void Start(){
-        rb = GetComponent<Rigidbody2D>();
+        playerBody = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        move.x = Joystick.Horizontal;
-        move.y = Joystick.Vertical;
+        //move.x = Joystick.Horizontal;
+        //move.y = Joystick.Vertical;
+        movementDirection = new Vector2(Joystick.Horizontal, Joystick.Vertical);
 
     }
 
     void FixedUpdate(){
         if(PointerDown) {
-            rb.velocity = Vector3.zero;
+            playerBody.velocity = Vector3.zero;
         }
         else{
-            rb.MovePosition(rb.position + move * moveSpeed * Time.fixedDeltaTime);
+            playerBody.MovePosition(playerBody.position + movementDirection * moveSpeed * Time.fixedDeltaTime);
         }
     }
 }

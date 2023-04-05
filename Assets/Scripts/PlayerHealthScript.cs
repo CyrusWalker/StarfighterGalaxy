@@ -2,21 +2,29 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerLifeScript : MonoBehaviour
+public class PlayerHealthScript : MonoBehaviour
 {
-    public float maxLife = 100;
-    public float hitPoints;
+    public int maxHitPoints = 100;
+    public int currentHitPoints;
     public int hearts = 3;
+    [SerializeField] private float InvulnerabilityTimerMax;
+    public float InvulnerabilityTimer;
+    public HealthFrontSizer healthBar;
+
     // Start is called before the first frame update
     void Start() {
-        hitPoints = maxLife;
+        currentHitPoints = maxHitPoints;
+    }
+    
+    void Update() {
+        if(InvulnerabilityTimer > 0) {
+            InvulnerabilityTimer -= Time.deltaTime;
+        }
     }
 
-    void Damage(float dmg) {
-        hitPoints -= dmg;
-        if(hitPoints <= 0) {
-            hitPoints = maxLife;
-            ReduceHearts();
+    public void TakeDamage(int damage) {
+        if(InvulnerabilityTimer <= 0) {
+            DealDamageToPlayer(damage);
         }
     }
 
@@ -30,4 +38,20 @@ public class PlayerLifeScript : MonoBehaviour
     void Die() {
         //stub, do restart level stuff here later
     }
+
+    private void DealDamageToPlayer(int damage) {
+        currentHitPoints -= damage;
+        if(currentHitPoints <= 0) {
+            currentHitPoints = maxHitPoints;
+            ReduceHearts();
+        }
+        float newSize = (float) currentHitPoints / maxHitPoints;
+        healthBar.ResizeBar(newSize);
+        BecomeInvulnerable();
+    }
+
+    public void BecomeInvulnerable() {
+        InvulnerabilityTimer = InvulnerabilityTimerMax;
+    }
+
 }

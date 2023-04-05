@@ -7,7 +7,7 @@ using Random = UnityEngine.Random;
 public class EnemyController : MonoBehaviour
 {
     private Camera cam; 
-    private Rigidbody2D rb;
+    private Rigidbody2D enemyBody;
     public float speedY = 1f;
     public float speedX = 1f;
     public int yValMin;
@@ -18,7 +18,7 @@ public class EnemyController : MonoBehaviour
     void Start()
     {
         yVal = Random.Range(yValMin,yValMax);
-        rb = GetComponent<Rigidbody2D>();
+        enemyBody = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
@@ -27,11 +27,11 @@ public class EnemyController : MonoBehaviour
         
         if (transform.position.y > yVal)
         {
-            rb.velocity = new Vector2(speedX, -speedY);
+            enemyBody.velocity = new Vector2(speedX, -speedY);
         }
         else
         {
-            rb.velocity = new Vector2(speedX, 0f);
+            enemyBody.velocity = new Vector2(speedX, 0f);
         }
     }
 
