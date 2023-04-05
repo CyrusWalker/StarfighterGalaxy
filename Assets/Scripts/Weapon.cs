@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Weapon : MonoBehaviour
 {
@@ -16,6 +17,7 @@ public class Weapon : MonoBehaviour
     public Transform firePoint2;
     public Transform firePoint3;
     public GameObject bulletPrefab;
+    public Button ShootButton;
 
     public void Shoot()
     { 
@@ -34,4 +36,5 @@ public class Weapon : MonoBehaviour
         }
 
     }
+
 }
