@@ -4,15 +4,16 @@ using UnityEngine;
 
 public class PlayerHealthScript : MonoBehaviour
 {
-    public int maxLife = 100;
+    public int maxHitPoints = 100;
     public int currentHitPoints;
     public int hearts = 3;
     [SerializeField] private float InvulnerabilityTimerMax;
     public float InvulnerabilityTimer;
+    public HealthFrontSizer healthBar;
 
     // Start is called before the first frame update
     void Start() {
-        currentHitPoints = maxLife;
+        currentHitPoints = maxHitPoints;
     }
     
     void Update() {
@@ -41,9 +42,11 @@ public class PlayerHealthScript : MonoBehaviour
     private void DealDamageToPlayer(int damage) {
         currentHitPoints -= damage;
         if(currentHitPoints <= 0) {
-            currentHitPoints = maxLife;
+            currentHitPoints = maxHitPoints;
             ReduceHearts();
         }
+        float newSize = (float) currentHitPoints / maxHitPoints;
+        healthBar.ResizeBar(newSize);
         BecomeInvulnerable();
     }
 
