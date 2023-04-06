@@ -12,12 +12,7 @@ public class PixelPerfectCamera : MonoBehaviour
     void Awake() 
     {
         CameraSetup();
-        if (restarted == false)
-        {
-            AddCollider();
-            restarted = true;
-            Debug.Log("Awake Called");
-        }
+        AddCollider();
         
     }
 
@@ -28,8 +23,10 @@ public class PixelPerfectCamera : MonoBehaviour
         if(camera.orthographic) {
             scale = Screen.height/nativeResolution.y;
             if (restarted == false)
+            {
+                restarted = true;
                 pixelsToUnits *= scale;
-            
+            }
             camera.orthographicSize = (Screen.height / 2.0f) / pixelsToUnits;
         }
     }
