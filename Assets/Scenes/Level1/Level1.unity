@@ -164,7 +164,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7985823798221039112, guid: f2ffb9565ec8fc04697a5ef5cff6f859, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 30
+      value: 160
       objectReference: {fileID: 0}
     - target: {fileID: 7985823798221039112, guid: f2ffb9565ec8fc04697a5ef5cff6f859, type: 3}
       propertyPath: m_LocalPosition.x
@@ -200,7 +200,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7985823798221039112, guid: f2ffb9565ec8fc04697a5ef5cff6f859, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -36.700073
+      value: -106
       objectReference: {fileID: 0}
     - target: {fileID: 7985823798221039112, guid: f2ffb9565ec8fc04697a5ef5cff6f859, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -619,22 +619,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fixed Joystick
       objectReference: {fileID: 0}
-    - target: {fileID: 2929252285020697096, guid: aaa2c939c0359ac4dbce3f49e8b90252, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 165.07
-      objectReference: {fileID: 0}
-    - target: {fileID: 2929252285020697096, guid: aaa2c939c0359ac4dbce3f49e8b90252, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 165.07
-      objectReference: {fileID: 0}
-    - target: {fileID: 2929252285020697096, guid: aaa2c939c0359ac4dbce3f49e8b90252, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2929252285020697096, guid: aaa2c939c0359ac4dbce3f49e8b90252, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aaa2c939c0359ac4dbce3f49e8b90252, type: 3}
 --- !u!1 &1073352570
@@ -947,6 +931,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pause Menu Panel
       objectReference: {fileID: 0}
+    - target: {fileID: 1671602531979397314, guid: a2ea35aa98eeff749902bfcde9028a51, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2007516920}
     - target: {fileID: 6866368856495070589, guid: a2ea35aa98eeff749902bfcde9028a51, type: 3}
       propertyPath: m_RootOrder
       value: 1
