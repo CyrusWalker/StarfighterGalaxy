@@ -401,17 +401,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 4844745130831854051, guid: 247872c927b7da2419882dac744f54df, type: 3}
   m_PrefabInstance: {fileID: 4844745130188816851}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &649885745 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4844745130831854050, guid: 247872c927b7da2419882dac744f54df, type: 3}
-  m_PrefabInstance: {fileID: 4844745130188816851}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 58256aef35cee98489124b984c617db4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &896743343
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -914,7 +903,7 @@ PrefabInstance:
     - target: {fileID: 5397943359710142945, guid: c1808b4a9f04de244be62f134c19e0f7, type: 3}
       propertyPath: hearts
       value: 
-      objectReference: {fileID: 649885745}
+      objectReference: {fileID: 2088906050}
     - target: {fileID: 5397943359710142945, guid: c1808b4a9f04de244be62f134c19e0f7, type: 3}
       propertyPath: healthBar
       value: 
@@ -1046,6 +1035,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &2088906049 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3807024985877083917, guid: 247872c927b7da2419882dac744f54df, type: 3}
+  m_PrefabInstance: {fileID: 4844745130188816851}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2088906050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2088906049}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3154d181ed01aaf4a8249a57f706203e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  heart1: {fileID: 0}
+  heart2: {fileID: 0}
+  heart3: {fileID: 0}
+  heart4: {fileID: 0}
+  heart5: {fileID: 0}
+  heartCount: 0
 --- !u!1001 &4844745130188816851
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1141,7 +1153,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4844745130831854050, guid: 247872c927b7da2419882dac744f54df, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 247872c927b7da2419882dac744f54df, type: 3}
 --- !u!1001 &7489572757785224668
 PrefabInstance:
