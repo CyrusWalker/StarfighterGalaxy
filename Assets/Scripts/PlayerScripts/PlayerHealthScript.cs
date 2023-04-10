@@ -1,19 +1,24 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerHealthScript : MonoBehaviour
 {
+    public GameManager gameManager;
     public int maxHitPoints = 100;
     public int currentHitPoints;
-    public int hearts = 3;
+    public HeartManagerScript hearts;
     [SerializeField] private float InvulnerabilityTimerMax;
     public float InvulnerabilityTimer;
     public HealthFrontSizer healthBar;
+    public Animator anim;
+    public Button PauseButton;
 
     // Start is called before the first frame update
     void Start() {
         currentHitPoints = maxHitPoints;
+        //anim = GetComponent<Animator>();
     }
     
     void Update() {
@@ -29,14 +34,16 @@ public class PlayerHealthScript : MonoBehaviour
     }
 
     void ReduceHearts() {
-        hearts--;
-        if(hearts <= 0) {
+        hearts.ReduceHearts();
+        if(hearts.GetHearts() <= 0) {
             Die();
         }
     }
     
     void Die() {
-        //stub, do restart level stuff here later
+        gameManager.Pause();
+        anim.SetTrigger("Show");
+        PauseButton.enabled = false;
     }
 
     private void DealDamageToPlayer(int damage) {
