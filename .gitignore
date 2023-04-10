@@ -12,6 +12,7 @@
 /[Pp]ackages/*
 /[Uu]ser[Ss]ettings/*
 /.idea/*
+/Assets/Scripts/.vscode/*
 
 # Asset meta data should only be ignored when the corresponding asset is also ignored
 !/[Aa]ssets/**/*.meta
