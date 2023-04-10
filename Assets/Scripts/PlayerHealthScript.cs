@@ -8,7 +8,7 @@ public class PlayerHealthScript : MonoBehaviour
     public GameManager gameManager;
     public int maxHitPoints = 100;
     public int currentHitPoints;
-    public int hearts = 3;
+    public HeartManagerScript hearts;
     [SerializeField] private float InvulnerabilityTimerMax;
     public float InvulnerabilityTimer;
     public HealthFrontSizer healthBar;
@@ -34,8 +34,8 @@ public class PlayerHealthScript : MonoBehaviour
     }
 
     void ReduceHearts() {
-        hearts--;
-        if(hearts <= 0) {
+        hearts.ReduceHearts();
+        if(hearts.GetHearts() <= 0) {
             Die();
         }
     }
