@@ -149,7 +149,7 @@ RectTransform:
   m_GameObject: {fileID: 169179558}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 11.532273, y: 26.235924, z: 11.532273}
+  m_LocalScale: {x: 8.985503, y: 15.669457, z: 7.7607584}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1217758861}
@@ -565,11 +565,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 597518064284832491, guid: 9e0ebeac4f9521b47aa4284261ef9796, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -436
+      value: -261
       objectReference: {fileID: 0}
     - target: {fileID: 597518064284832491, guid: 9e0ebeac4f9521b47aa4284261ef9796, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 1378
+      value: 880
       objectReference: {fileID: 0}
     - target: {fileID: 597518064284832491, guid: 9e0ebeac4f9521b47aa4284261ef9796, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -601,7 +601,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4269296385983939210, guid: 9e0ebeac4f9521b47aa4284261ef9796, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9089267976630165897, guid: 9e0ebeac4f9521b47aa4284261ef9796, type: 3}
       propertyPath: m_Name

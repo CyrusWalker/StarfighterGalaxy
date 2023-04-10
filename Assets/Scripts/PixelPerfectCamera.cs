@@ -56,7 +56,7 @@ public class PixelPerfectCamera : MonoBehaviour
         // Debug.Log(bottomRight);
 
 
-        var edge;
+        EdgeCollider2D edge;
         if(GetComponent<EdgeCollider2D>() == null) {
             edge = gameObject.AddComponent<EdgeCollider2D>();
         } else {
