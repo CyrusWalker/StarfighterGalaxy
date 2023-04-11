@@ -222,6 +222,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyWeapon2
       objectReference: {fileID: 0}
+    - target: {fileID: 7624953680581247406, guid: f444067741eed2845a5d9e942f6178bc, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7624953680581247406, guid: f444067741eed2845a5d9e942f6178bc, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8062707200254191480, guid: f444067741eed2845a5d9e942f6178bc, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8062707200254191480, guid: f444067741eed2845a5d9e942f6178bc, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f444067741eed2845a5d9e942f6178bc, type: 3}
 --- !u!114 &1035039252621169884 stripped

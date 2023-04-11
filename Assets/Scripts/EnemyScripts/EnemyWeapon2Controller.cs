@@ -10,7 +10,7 @@ public class EnemyWeapon2Controller : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        randomWaitTime = Random.Range(0.5f, maxWaitTime);
+        SetWaitTime();
     }
 
     // Update is called once per frame
@@ -19,7 +19,11 @@ public class EnemyWeapon2Controller : MonoBehaviour
         randomWaitTime -= Time.deltaTime;
         if(randomWaitTime <= 0) {
             weapon.Shoot();
+            SetWaitTime();
         }
+    }
+
+    void SetWaitTime() {
         randomWaitTime = Random.Range(0.5f, maxWaitTime);
     }
 }

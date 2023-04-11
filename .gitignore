@@ -12,6 +12,7 @@
 /[Pp]ackages/*
 /[Uu]ser[Ss]ettings/*
 /.idea/*
+/Assets/Editor
 /Assets/Editor/*
 /Assets/Editor.meta
 /Assets/Scripts/.vscode/*

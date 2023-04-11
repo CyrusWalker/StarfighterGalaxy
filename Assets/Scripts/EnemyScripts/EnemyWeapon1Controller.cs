@@ -18,7 +18,6 @@ public class EnemyWeapon1Controller : MonoBehaviour
     {
         randomWaitTime -= Time.deltaTime;
         if(randomWaitTime <= 0) {
-            Debug.Log("randomWaitTime is less than or equal to 0!");
             weapon.Shoot();
             SetWaitTime();
         }
