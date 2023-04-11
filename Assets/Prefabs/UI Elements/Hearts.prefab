@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4844745130831854051}
-  - component: {fileID: 2088906050}
+  - component: {fileID: 9094102322592331463}
   m_Layer: 5
   m_Name: Hearts
   m_TagString: Untagged
@@ -42,7 +42,7 @@ RectTransform:
   m_AnchoredPosition: {x: -350, y: 661.11}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2088906050
+--- !u!114 &9094102322592331463
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -54,12 +54,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3154d181ed01aaf4a8249a57f706203e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  heart1: {fileID: 0}
-  heart2: {fileID: 0}
-  heart3: {fileID: 0}
-  heart4: {fileID: 0}
-  heart5: {fileID: 0}
-  heartCount: 0
+  heart1: {fileID: 4844745131566575591}
+  heart2: {fileID: 4844745132269818903}
+  heart3: {fileID: 4844745132152172565}
+  heart4: {fileID: 4844745131824772257}
+  heart5: {fileID: 4844745131245922562}
+  heartCount: 3
 --- !u!1 &4844745131245922562
 GameObject:
   m_ObjectHideFlags: 0
