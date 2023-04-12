@@ -14,9 +14,11 @@ GameObject:
   - component: {fileID: 2532079277584604897}
   - component: {fileID: 2532079277584604903}
   - component: {fileID: 2532079277584604902}
+  - component: {fileID: 5397943359710142945}
+  - component: {fileID: -3510687175563641890}
   m_Layer: 0
   m_Name: Player 1
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30,7 +32,7 @@ Transform:
   m_GameObject: {fileID: 2532079277584604909}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.0734, y: -50.9, z: 0}
-  m_LocalScale: {x: 1.0092, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4391285442748906840}
@@ -79,7 +81,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: ca74a7fc0c727134990520429d47bc5f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -119,7 +121,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Joystick: {fileID: 0}
-  moveSpeed: 5
+  moveSpeed: 100
 --- !u!50 &2532079277584604903
 Rigidbody2D:
   serializedVersion: 4
@@ -137,7 +139,7 @@ Rigidbody2D:
   m_AngularDrag: 0.05
   m_GravityScale: 1
   m_Material: {fileID: 0}
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
@@ -151,7 +153,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.50340724, y: 0}
@@ -167,6 +169,40 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 14.993185, y: 16}
   m_EdgeRadius: 0
+--- !u!114 &5397943359710142945
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2532079277584604909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f03e2a278785ee44b8b7d10a7b8e3724, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 0}
+  maxHitPoints: 200
+  currentHitPoints: 0
+  hearts: {fileID: 0}
+  InvulnerabilityTimerMax: 1.5
+  InvulnerabilityTimer: 0
+  healthBar: {fileID: 0}
+  anim: {fileID: 0}
+  PauseButton: {fileID: 0}
+--- !u!114 &-3510687175563641890
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2532079277584604909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcbbbb32a1540fc4e9645a7efc20b060, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerHealth: {fileID: 5397943359710142945}
 --- !u!1 &4391285442748906841
 GameObject:
   m_ObjectHideFlags: 0
@@ -212,10 +248,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86bbd1bb1c51933499ef715deb8aded6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FirePointNum: 0
   firePoint1: {fileID: 4391285443827886363}
-  firePoint2: {fileID: 0}
-  firePoint3: {fileID: 0}
   bulletPrefab: {fileID: 8318277845173830505, guid: 77ff59184be51cd4a8e21e10940099c4, type: 3}
 --- !u!1 &4391285443827886364
 GameObject:
@@ -257,7 +290,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4947451872423135213}
-  - component: {fileID: 4947451872423135212}
+  - component: {fileID: 4568413464920171340}
   m_Layer: 0
   m_Name: Weapon2
   m_TagString: Untagged
@@ -282,7 +315,7 @@ Transform:
   m_Father: {fileID: 2532079277584604896}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4947451872423135212
+--- !u!114 &4568413464920171340
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -291,13 +324,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 4947451872423135210}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 86bbd1bb1c51933499ef715deb8aded6, type: 3}
+  m_Script: {fileID: 11500000, guid: 7496761996ec20b418c2a91ab4cd9b17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FirePointNum: 1
-  firePoint1: {fileID: 4947451872808778578}
-  firePoint2: {fileID: 4947451872765063823}
-  firePoint3: {fileID: 0}
+  firePoint2: {fileID: 4947451872808778578}
+  firePoint3: {fileID: 4947451872765063823}
   bulletPrefab: {fileID: 8318277845173830505, guid: 77ff59184be51cd4a8e21e10940099c4, type: 3}
 --- !u!1 &4947451872765063820
 GameObject:
@@ -401,7 +432,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6020888400080762183}
-  - component: {fileID: 6020888400080762182}
+  - component: {fileID: 7718693049342928645}
   m_Layer: 0
   m_Name: Weapon3
   m_TagString: Untagged
@@ -427,7 +458,7 @@ Transform:
   m_Father: {fileID: 2532079277584604896}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6020888400080762182
+--- !u!114 &7718693049342928645
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -436,10 +467,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 6020888400080762177}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 86bbd1bb1c51933499ef715deb8aded6, type: 3}
+  m_Script: {fileID: 11500000, guid: e3e5501ba11238b43bdbc4ff3068fd9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FirePointNum: 2
   firePoint1: {fileID: 6020888399876799251}
   firePoint2: {fileID: 6020888400267403128}
   firePoint3: {fileID: 6020888401794574339}
