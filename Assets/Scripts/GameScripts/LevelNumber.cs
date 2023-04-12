@@ -11,6 +11,6 @@ public class LevelNumber : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        levelText.text = sceneID.ToString();
+        levelText.text = (sceneID - 1).ToString();
     }
 }
