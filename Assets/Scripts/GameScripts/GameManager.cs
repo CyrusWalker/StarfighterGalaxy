@@ -7,7 +7,29 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public Button ShootButton;
- 
+    public GameObject spawner;
+    private EnemySpawner EnemySpawner;
+    public GameObject WinPanel;
+
+    public void Start()
+    {
+        EnemySpawner = spawner.GetComponent<EnemySpawner>();
+    }
+
+    public void Update()
+    {
+        var enemies = GameObject.FindWithTag("Enemy");
+        if (enemies == null && EnemySpawner.spawnCount == EnemySpawner.spawnMax)
+        {
+            EndLevel();
+        }
+    }
+
+
+    public void EndLevel()
+    {
+        WinPanel.SetActive(true);
+    }
 
     public void Pause()
     {
