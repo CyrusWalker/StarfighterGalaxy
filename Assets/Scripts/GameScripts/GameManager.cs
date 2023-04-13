@@ -29,6 +29,7 @@ public class GameManager : MonoBehaviour
     public void EndLevel()
     {
         WinPanel.SetActive(true);
+        Pause();
     }
 
     public void Pause()
