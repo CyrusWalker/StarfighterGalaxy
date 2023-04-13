@@ -724,6 +724,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3699321178601651753, guid: 1cb4b73578d1e65429441c89d39d5c84, type: 3}
+      propertyPath: spawnMax
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7449639768242142677, guid: 1cb4b73578d1e65429441c89d39d5c84, type: 3}
       propertyPath: m_Icon
       value: 
@@ -989,7 +993,6 @@ GameObject:
   - component: {fileID: 707293885}
   - component: {fileID: 707293884}
   - component: {fileID: 707293883}
-  - component: {fileID: 707293886}
   m_Layer: 5
   m_Name: LevelEnd
   m_TagString: Untagged
@@ -1077,24 +1080,8 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_TargetDisplay: 0
---- !u!111 &707293886
-Animation:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 707293881}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 0}
-  m_Animations:
-  - {fileID: 7400000, guid: 370fbbf9c328a5f41a442a30c6a959b7, type: 2}
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 0
 --- !u!1 &767891513
 GameObject:
   m_ObjectHideFlags: 0
@@ -1107,6 +1094,7 @@ GameObject:
   - component: {fileID: 767891517}
   - component: {fileID: 767891516}
   - component: {fileID: 767891515}
+  - component: {fileID: 767891518}
   m_Layer: 5
   m_Name: MainMenuButton
   m_TagString: Untagged
@@ -1178,7 +1166,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 767891516}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 767891518}
+        m_TargetAssemblyTypeName: ChangeScene, Assembly-CSharp
+        m_MethodName: MoveToScene
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &767891516
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1217,6 +1217,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 767891513}
   m_CullTransparentMesh: 1
+--- !u!114 &767891518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 767891513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8acfaadc0327964985161b43fa74fa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &776958497 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 94011132995462483, guid: d5f4a354c943c1141903379f80197014, type: 3}
@@ -2476,8 +2488,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ShootButton: {fileID: 1438842515}
+  PauseButton: {fileID: 2088068248}
+  Joystick: {fileID: 976009075}
   spawner: {fileID: 1599393803}
   WinPanel: {fileID: 707293881}
+  TimeScale: 0
 --- !u!4 &2007516921
 Transform:
   m_ObjectHideFlags: 0
