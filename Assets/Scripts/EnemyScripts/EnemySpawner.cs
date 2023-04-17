@@ -9,11 +9,16 @@ public class EnemySpawner : MonoBehaviour
     private Vector2 spawnPosition;
     public float spawnRate = 2.0f;
     private float nextSpawn = 0.0f;
-    private int spawnCount = 0;
+    public int spawnCount = 0;
     public int spawnMax = 5;
 
     public List<GameObject> enemyList;
     private GameObject randomEnemy;
+
+    void Update()
+    {
+        SpawnEnemy();
+    }
 
     private GameObject RandomEnemy()
     {
@@ -42,10 +47,5 @@ public class EnemySpawner : MonoBehaviour
                 spawnCount++;
             }
         }
-    }
-    
-    void Update()
-    {
-        SpawnEnemy();
     }
 }
