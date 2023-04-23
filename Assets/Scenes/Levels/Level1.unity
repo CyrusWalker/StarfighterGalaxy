@@ -1217,24 +1217,6 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 5
   m_TargetDisplay: 0
---- !u!1 &733624887 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2532079277584604909, guid: c1808b4a9f04de244be62f134c19e0f7, type: 3}
-  m_PrefabInstance: {fileID: 1640407568}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &733624896
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 733624887}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a4c0e483648d4573b3afc165a53b922, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  edgeOffset: 8
 --- !u!1 &767891513
 GameObject:
   m_ObjectHideFlags: 0
@@ -1512,11 +1494,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6265626025156374481, guid: 0ab1335e6e50f4cc6918a71cd45c9c76, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -128
+      value: -175
       objectReference: {fileID: 0}
     - target: {fileID: 6265626025156374481, guid: 0ab1335e6e50f4cc6918a71cd45c9c76, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 128
+      value: 175
       objectReference: {fileID: 0}
     - target: {fileID: 6265626025156374481, guid: 0ab1335e6e50f4cc6918a71cd45c9c76, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1652,11 +1634,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2929252283123773938, guid: aaa2c939c0359ac4dbce3f49e8b90252, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 128
+      value: 175
       objectReference: {fileID: 0}
     - target: {fileID: 2929252283123773938, guid: aaa2c939c0359ac4dbce3f49e8b90252, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 128
+      value: 175
       objectReference: {fileID: 0}
     - target: {fileID: 2929252283123773938, guid: aaa2c939c0359ac4dbce3f49e8b90252, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2393,14 +2375,6 @@ PrefabInstance:
       propertyPath: Joystick
       value: 
       objectReference: {fileID: 976009075}
-    - target: {fileID: 2532079277584604897, guid: c1808b4a9f04de244be62f134c19e0f7, type: 3}
-      propertyPath: moveSpeed
-      value: 65
-      objectReference: {fileID: 0}
-    - target: {fileID: 2532079277584604899, guid: c1808b4a9f04de244be62f134c19e0f7, type: 3}
-      propertyPath: m_SortingOrder
-      value: 4
-      objectReference: {fileID: 0}
     - target: {fileID: 2532079277584604909, guid: c1808b4a9f04de244be62f134c19e0f7, type: 3}
       propertyPath: m_Name
       value: Player 1
@@ -2425,10 +2399,6 @@ PrefabInstance:
       propertyPath: gameManager
       value: 
       objectReference: {fileID: 2007516920}
-    - target: {fileID: 5397943359710142945, guid: c1808b4a9f04de244be62f134c19e0f7, type: 3}
-      propertyPath: maxHitPoints
-      value: 100
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1808b4a9f04de244be62f134c19e0f7, type: 3}
 --- !u!1001 &1913678635
