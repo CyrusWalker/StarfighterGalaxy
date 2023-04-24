@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6071935687410189267}
   - component: {fileID: 7562209679014827401}
   - component: {fileID: 5255971108828967862}
+  - component: {fileID: 2223567398330420852}
   m_Layer: 0
   m_Name: EnemySprite09
   m_TagString: Enemy
@@ -151,6 +152,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 16, y: 16}
   m_EdgeRadius: 0
+--- !u!114 &2223567398330420852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5516812742675516113}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a4c0e483648d4573b3afc165a53b922, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  edgeOffset: 6
 --- !u!1001 &2754353903752227085
 PrefabInstance:
   m_ObjectHideFlags: 0

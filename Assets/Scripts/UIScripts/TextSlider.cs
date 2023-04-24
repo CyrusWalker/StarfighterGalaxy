@@ -10,6 +10,11 @@ public class TextSlider : MonoBehaviour
     public TextMeshProUGUI numberText;
     public Slider slider;
 
+    void Awake()
+    {
+        SetNumberText();
+    }
+
     public void SetNumberText()
     {
         numberText.text = Mathf.Round(slider.value * 100).ToString();
