@@ -13,6 +13,7 @@ public class AudioManager : MonoBehaviour
     public const string MASTER_KEY = "masterVolume";
     public const string MUSIC_KEY = "musicVolume";
     public const string SFX_KEY = "sfxVolume";
+
     private void Awake()
     {
         if (instance == null)

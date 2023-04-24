@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 3406669265432370703}
   - component: {fileID: 70604614814328758}
   - component: {fileID: -4907496605881646986}
+  - component: {fileID: -4556650251471698289}
   m_Layer: 0
   m_Name: EnemySprite05
   m_TagString: Enemy
@@ -167,6 +168,19 @@ MonoBehaviour:
   weapon: {fileID: 3193244131345575371}
   randomWaitTime: 0
   maxWaitTime: 3
+--- !u!114 &-4556650251471698289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8969124424001997237}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a4c0e483648d4573b3afc165a53b922, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  edgeOffset: 6
 --- !u!1001 &7315988509783621368
 PrefabInstance:
   m_ObjectHideFlags: 0
