@@ -51,4 +51,5 @@ public class HeartManagerScript : MonoBehaviour
     public int GetHearts() {
         return heartCount;
     }
+    
 }
