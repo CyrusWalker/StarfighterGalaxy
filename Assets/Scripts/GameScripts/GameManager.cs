@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-
 public class GameManager : MonoBehaviour
 {
     public Button ShootButton;
@@ -14,7 +13,6 @@ public class GameManager : MonoBehaviour
     public GameObject WinPanel;
     public float TimeScale;
     bool levelEnded = false;
-
     public void Start()
     {
         EnemySpawner = spawner.GetComponent<EnemySpawner>();

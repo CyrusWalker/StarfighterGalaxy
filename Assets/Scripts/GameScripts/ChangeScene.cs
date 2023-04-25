@@ -14,7 +14,6 @@ public class ChangeScene : MonoBehaviour
         SceneManager.LoadScene(sceneID); 
         StartCoroutine(SetActive(nextScene));
     }
- 
     public IEnumerator SetActive(Scene scene)
     {
         int i = 0;
@@ -26,5 +25,4 @@ public class ChangeScene : MonoBehaviour
         SceneManager.SetActiveScene(scene);
         yield break;
     }
-    
 }
