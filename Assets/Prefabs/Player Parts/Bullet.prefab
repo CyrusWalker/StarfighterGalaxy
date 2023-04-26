@@ -146,5 +146,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8660fc215aba5c41844ffede81f8cb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 200
+  speed: 50
   bulletBody: {fileID: 4111861925492779614}
+  weapon1: {fileID: 0}
+  pierce: 1

@@ -863,7 +863,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 208827072}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1502225337}
+        m_TargetAssemblyTypeName: HeartManagerScript, Assembly-CSharp
+        m_MethodName: AddHeart
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &208827072
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -967,6 +979,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1cb4b73578d1e65429441c89d39d5c84, type: 3}
+--- !u!114 &299689231 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4568413464920171340, guid: c1808b4a9f04de244be62f134c19e0f7, type: 3}
+  m_PrefabInstance: {fileID: 1640407568}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7496761996ec20b418c2a91ab4cd9b17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &417954165
 GameObject:
   m_ObjectHideFlags: 0
@@ -1050,7 +1073,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 417954168}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 706173571}
+        m_TargetAssemblyTypeName: WeaponSelect, Assembly-CSharp
+        m_MethodName: Weapon2
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &417954168
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1319,6 +1354,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 4844745130831854051, guid: 247872c927b7da2419882dac744f54df, type: 3}
   m_PrefabInstance: {fileID: 4844745130188816851}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &706173571 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2532079277584604898, guid: c1808b4a9f04de244be62f134c19e0f7, type: 3}
+  m_PrefabInstance: {fileID: 1640407568}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 586f967525656eb45a141dec9e1caddb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &776958497 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 94011132995462483, guid: d5f4a354c943c1141903379f80197014, type: 3}
@@ -1388,9 +1434,61 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6265626025156374486, guid: 0ab1335e6e50f4cc6918a71cd45c9c76, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6265626025156374486, guid: 0ab1335e6e50f4cc6918a71cd45c9c76, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6265626025156374486, guid: 0ab1335e6e50f4cc6918a71cd45c9c76, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6265626025156374486, guid: 0ab1335e6e50f4cc6918a71cd45c9c76, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 900915676}
+    - target: {fileID: 6265626025156374486, guid: 0ab1335e6e50f4cc6918a71cd45c9c76, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 299689231}
+    - target: {fileID: 6265626025156374486, guid: 0ab1335e6e50f4cc6918a71cd45c9c76, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 2039912749}
+    - target: {fileID: 6265626025156374486, guid: 0ab1335e6e50f4cc6918a71cd45c9c76, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6265626025156374486, guid: 0ab1335e6e50f4cc6918a71cd45c9c76, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6265626025156374486, guid: 0ab1335e6e50f4cc6918a71cd45c9c76, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: Shoot
+      objectReference: {fileID: 0}
+    - target: {fileID: 6265626025156374486, guid: 0ab1335e6e50f4cc6918a71cd45c9c76, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: Shoot
+      objectReference: {fileID: 0}
+    - target: {fileID: 6265626025156374486, guid: 0ab1335e6e50f4cc6918a71cd45c9c76, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: Weapon2, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6265626025156374486, guid: 0ab1335e6e50f4cc6918a71cd45c9c76, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: Weapon3, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6265626025156374486, guid: 0ab1335e6e50f4cc6918a71cd45c9c76, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6265626025156374486, guid: 0ab1335e6e50f4cc6918a71cd45c9c76, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0ab1335e6e50f4cc6918a71cd45c9c76, type: 3}
 --- !u!114 &900915676 stripped
@@ -1983,7 +2081,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1226633016}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 706173571}
+        m_TargetAssemblyTypeName: WeaponSelect, Assembly-CSharp
+        m_MethodName: Weapon3
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1226633016
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2275,7 +2385,7 @@ GameObject:
   - component: {fileID: 1518827591}
   - component: {fileID: 1518827590}
   m_Layer: 5
-  m_Name: Upgrade4
+  m_Name: ArmorPierce
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2345,7 +2455,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1518827591}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 614859143407113845, guid: 77ff59184be51cd4a8e21e10940099c4, type: 3}
+        m_TargetAssemblyTypeName: Bullet, Assembly-CSharp
+        m_MethodName: ArmorPierceTrue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1518827591
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2847,7 +2969,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Upgrade4
+  m_text: 'Armor
+
+    Pierce'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 79459efec17a4d00a321bdcc27bbc385, type: 2}
@@ -3231,6 +3355,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2000145478}
   m_CullTransparentMesh: 1
+--- !u!114 &2039912749 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7718693049342928645, guid: c1808b4a9f04de244be62f134c19e0f7, type: 3}
+  m_PrefabInstance: {fileID: 1640407568}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3e5501ba11238b43bdbc4ff3068fd9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &2088068248 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7985823798221039114, guid: f2ffb9565ec8fc04697a5ef5cff6f859, type: 3}
