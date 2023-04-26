@@ -62,7 +62,7 @@ MonoBehaviour:
   templateScene: {fileID: 102900000, guid: 1d8aecd0b5eda7f44a9d939ca5249e52, type: 3}
   templateName: 
   description: 
-  preview: {fileID: 0}
+  preview: {fileID: -8004035775302612587}
   dependencies:
   - dependency: {fileID: 7110827461495394681, guid: caa2424200628904e96263c8061000ee, type: 3}
     instantiationMode: 1
