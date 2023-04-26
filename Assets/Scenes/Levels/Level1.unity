@@ -1201,6 +1201,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1518186580}
     m_Modifications:
+    - target: {fileID: 4827137695837640122, guid: 0ab1335e6e50f4cc6918a71cd45c9c76, type: 3}
+      propertyPath: weapon
+      value: 
+      objectReference: {fileID: 900915676}
     - target: {fileID: 6265626025156374480, guid: 0ab1335e6e50f4cc6918a71cd45c9c76, type: 3}
       propertyPath: m_Name
       value: ShootButton
@@ -1261,7 +1265,8 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 900915676}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 0ab1335e6e50f4cc6918a71cd45c9c76, type: 3}
 --- !u!114 &900915676 stripped
 MonoBehaviour:
