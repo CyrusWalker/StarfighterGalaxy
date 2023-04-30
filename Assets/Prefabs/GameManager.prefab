@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8454818900265337698}
   - component: {fileID: 7989112651247198434}
   m_Layer: 5
-  m_Name: NextLevelButton (1)
+  m_Name: NextLevelButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -800,7 +800,7 @@ GameObject:
   - component: {fileID: 2945626929414467432}
   - component: {fileID: 8984650905745624120}
   m_Layer: 5
-  m_Name: MainMenuButton (1)
+  m_Name: MainMenuButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -945,7 +945,7 @@ GameObject:
   - component: {fileID: 3044876322657217039}
   - component: {fileID: 4190587050988127431}
   m_Layer: 5
-  m_Name: Text (TMP) (1)
+  m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1082,7 +1082,7 @@ GameObject:
   - component: {fileID: 5082016721459183344}
   - component: {fileID: 216700664854890637}
   m_Layer: 5
-  m_Name: GoToShopButton (1)
+  m_Name: GoToShopButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1198,7 +1198,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 4
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
