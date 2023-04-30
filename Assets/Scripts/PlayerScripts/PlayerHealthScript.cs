@@ -7,7 +7,7 @@ public class PlayerHealthScript : MonoBehaviour
 {
     public GameManager gameManager;
     public int maxHitPoints = 100;
-    public double currentHitPoints;
+    public int currentHitPoints;
     public HeartManagerScript hearts;
     [SerializeField] private float InvulnerabilityTimerMax;
     public float InvulnerabilityTimer;
@@ -59,13 +59,6 @@ public class PlayerHealthScript : MonoBehaviour
 
     public void BecomeInvulnerable() {
         InvulnerabilityTimer = InvulnerabilityTimerMax;
-    }
-
-    public void IncreaseMaxHealth()
-    {
-        int tempmax = maxHitPoints;
-        maxHitPoints += 50;
-        currentHitPoints = currentHitPoints / tempmax * maxHitPoints;
     }
 
 }

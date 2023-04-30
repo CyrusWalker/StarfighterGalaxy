@@ -11,11 +11,8 @@ public class Weapon3 : MonoBehaviour
 
     public void Shoot()
     {
-        if (gameObject.activeSelf)
-        {
-            Instantiate(bulletPrefab, firePoint1.position, firePoint1.rotation);
-            Instantiate(bulletPrefab, firePoint2.position, firePoint2.rotation);
-            Instantiate(bulletPrefab, firePoint3.position, firePoint3.rotation);
-        }
+        Instantiate(bulletPrefab, firePoint1.position, firePoint1.rotation);
+        Instantiate(bulletPrefab, firePoint2.position, firePoint2.rotation);
+        Instantiate(bulletPrefab, firePoint3.position, firePoint3.rotation);
     }
 }
