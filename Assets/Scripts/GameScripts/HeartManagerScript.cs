@@ -40,11 +40,11 @@ public class HeartManagerScript : MonoBehaviour
     }
 
     public void AddHeart() {
-        if(heartCount == 5) {
+        if(heartCount == 4) {
             Debug.Log("Attempted to add a heart when the player already has 5");
         } else {
-            hearts[heartCount].SetActive(true);
             heartCount++;
+            hearts[heartCount].SetActive(true);
         }
     }
 
