@@ -10,6 +10,7 @@ public class Bullet : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //weapon1.pierce = false;
         bulletBody.velocity = transform.up * speed;
     }
 
@@ -19,9 +20,11 @@ public class Bullet : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
+        bool pierce = GameObject.Find("Player 1").GetComponent<WeaponSelect>().pierce;
         if(collider.gameObject.tag == "Enemy") {
             Destroy(collider.gameObject);
-            Destroy(gameObject);
+            if (pierce == false)
+                Destroy(gameObject);
         }
 
     }
