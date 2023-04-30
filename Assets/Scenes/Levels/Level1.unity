@@ -617,6 +617,10 @@ PrefabInstance:
       propertyPath: ShootButton
       value: 
       objectReference: {fileID: 1438842515}
+    - target: {fileID: 5082016721459183344, guid: 7f871258ab2e6044fa14833a3ee6ec87, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5159724522841172093, guid: 7f871258ab2e6044fa14833a3ee6ec87, type: 3}
       propertyPath: m_Camera
       value: 
@@ -1205,6 +1209,10 @@ PrefabInstance:
       propertyPath: weapon
       value: 
       objectReference: {fileID: 900915676}
+    - target: {fileID: 4827137695837640122, guid: 0ab1335e6e50f4cc6918a71cd45c9c76, type: 3}
+      propertyPath: timerMax
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6265626025156374480, guid: 0ab1335e6e50f4cc6918a71cd45c9c76, type: 3}
       propertyPath: m_Name
       value: ShootButton
@@ -2407,7 +2415,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
