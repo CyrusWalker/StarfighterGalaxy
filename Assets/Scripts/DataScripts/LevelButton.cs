@@ -14,7 +14,9 @@ namespace LevelUnlockSystem
         [SerializeField] private TextMeshProUGUI levelIndexText;
         [SerializeField] private Color lockColor, unlockColor;
         [SerializeField] private Button button;
-        [SerializeField] private GameObject activeLevelIndicator;
+
+        public bool levelUnlocked;
+        // [SerializeField] private GameObject activeLevelIndicator;
 
         private int levelIndex;
 
@@ -23,11 +25,21 @@ namespace LevelUnlockSystem
             button.onClick.AddListener(() => OnClick());
         }
 
+        private void ChangeLevelButton(LevelItem value)
+        {
+            value.unlocked = levelUnlocked;
+        }
+
+        private void Update()
+        {
+            levelIndexText.text = levelIndex.ToString();
+        }
+
         public void SetLevelButton(LevelItem value, int index, bool activeLevel)
         {
             if (value.unlocked)
             {
-                activeLevelIndicator.SetActive(activeLevel);
+                // activeLevelIndicator.SetActive(activeLevel);
                 levelIndex = index + 1;
                 button.interactable = true;
                 lockObject.SetActive(false);
