@@ -38,6 +38,19 @@ namespace LevelUnlockSystem
                 Destroy(gameObject);
             }
         }
+
+        private void Update()
+        {
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                SaveLoadLevelData.Instance.SaveData();
+            }
+        }
+
+        private void OnEnable()
+        {
+            SaveLoadLevelData.Instance.Initialize();
+        }
     }
     
     [System.Serializable]

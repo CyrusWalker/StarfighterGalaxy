@@ -24,11 +24,7 @@ namespace LevelUnlockSystem
         {
             button.onClick.AddListener(() => OnClick());
         }
-
-        private void ChangeLevelButton(LevelItem value)
-        {
-            value.unlocked = levelUnlocked;
-        }
+        
 
         private void Update()
         {
