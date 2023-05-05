@@ -9,6 +9,8 @@ public class MoveToNextLevel : MonoBehaviour
     public int nextSceneLoad;
 
     private int lastSceneIndex;
+
+    private bool endlessMode;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +23,10 @@ public class MoveToNextLevel : MonoBehaviour
         if (SceneManager.GetActiveScene().buildIndex == lastSceneIndex)
         {
             Debug.Log("YOU WON THE GAME!!!");
+            
+            endlessMode = true;
+            PlayerPrefs.SetInt("endlessMode", Convert.ToInt32(endlessMode));
+            Debug.Log("Endless Mode Unlocked!");
         }
         else
         {
