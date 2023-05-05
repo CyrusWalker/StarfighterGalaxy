@@ -337,7 +337,9 @@ GameObject:
   - component: {fileID: 4818020249803037227}
   - component: {fileID: 4818020249803037226}
   - component: {fileID: 4818020249803037221}
-  - component: {fileID: 380548198431293088}
+  - component: {fileID: 8366034637556335251}
+  - component: {fileID: 1199163879817861000}
+  - component: {fileID: 1953608090421815872}
   m_Layer: 5
   m_Name: LevelSelector
   m_TagString: Untagged
@@ -449,8 +451,20 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 4818020249803037226}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
---- !u!114 &380548198431293088
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &8366034637556335251
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -459,15 +473,37 @@ MonoBehaviour:
   m_GameObject: {fileID: 4818020249803037223}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2f5470de74529042a4da7678d6c2285, type: 3}
+  m_Script: {fileID: 11500000, guid: e8acfaadc0327964985161b43fa74fa1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lockObject: {fileID: 4818020249856119520}
-  unlockObject: {fileID: 4818020248523669141}
-  levelIndexText: {fileID: 4818020249579737014}
-  lockColor: {r: 0, g: 0, b: 0, a: 0.23529412}
-  unlockColor: {r: 1, g: 1, b: 1, a: 1}
-  button: {fileID: 4818020249803037221}
+--- !u!114 &1199163879817861000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4818020249803037223}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8573c7751002004d9fa647dd29116d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneID: 0
+--- !u!114 &1953608090421815872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4818020249803037223}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86a3f3499b835ca4492584a9d15f4ffc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  level:
+    m_Handle: 0
+  levelText: {fileID: 4818020249579737014}
 --- !u!1 &4818020249856119520
 GameObject:
   m_ObjectHideFlags: 0

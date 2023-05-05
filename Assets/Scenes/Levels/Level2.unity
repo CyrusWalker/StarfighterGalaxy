@@ -131,6 +131,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1322231045}
     m_Modifications:
     - target: {fileID: 7842074604623804345, guid: fd8856453c77d05408f657cad9045cb5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7842074604623804345, guid: fd8856453c77d05408f657cad9045cb5, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 2007516920}
@@ -1170,7 +1174,7 @@ MonoBehaviour:
       - m_Target: {fileID: 767891518}
         m_TargetAssemblyTypeName: ChangeScene, Assembly-CSharp
         m_MethodName: MoveToScene
-        m_Mode: 3
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1229,6 +1233,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8acfaadc0327964985161b43fa74fa1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sceneID: 0
 --- !u!224 &776958497 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 94011132995462483, guid: d5f4a354c943c1141903379f80197014, type: 3}
@@ -1724,6 +1729,7 @@ GameObject:
   - component: {fileID: 1443704102}
   - component: {fileID: 1443704101}
   - component: {fileID: 1443704100}
+  - component: {fileID: 1443704103}
   m_Layer: 5
   m_Name: NextLevelButton
   m_TagString: Untagged
@@ -1834,6 +1840,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1443704098}
   m_CullTransparentMesh: 1
+--- !u!114 &1443704103
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1443704098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8631dff185684814089afab92601ea28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextSceneLoad: 0
 --- !u!114 &1502225337 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 9094102322592331463, guid: 247872c927b7da2419882dac744f54df, type: 3}
@@ -2653,6 +2672,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2007516921}
   - component: {fileID: 2007516920}
+  - component: {fileID: 2007516922}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -2694,6 +2714,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2007516922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2007516919}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6b4e01533543294b816ed24270fdad4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  finalLevelIndex: 3
 --- !u!114 &2088068248 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7985823798221039114, guid: f2ffb9565ec8fc04697a5ef5cff6f859, type: 3}
