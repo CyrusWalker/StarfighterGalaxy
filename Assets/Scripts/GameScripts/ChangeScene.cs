@@ -7,10 +7,13 @@ public class ChangeScene : MonoBehaviour
 {
     // public float delay;
     
-    public void MoveToScene(int sceneID)
+    public int sceneID;
+    public void MoveToScene()
     {
-        var nextScene = SceneManager.GetSceneByBuildIndex(sceneID);
-        var oldScene = SceneManager.GetActiveScene();
+        // string levelName = "Level" + sceneID;
+        Debug.Log("Scene ID is: " + sceneID);
+        // sceneID = PlayerPrefs.GetInt(levelName);
+        Scene nextScene = SceneManager.GetSceneByBuildIndex(sceneID);
         SceneManager.LoadScene(sceneID); 
         StartCoroutine(SetActive(nextScene));
     }
