@@ -11,13 +11,21 @@ public class EnemySpawner : MonoBehaviour
     private float nextSpawn = 0.0f;
     public int spawnCount = 0;
     public int spawnMax = 5;
+    public bool endlessMode = false;
 
     public List<GameObject> enemyList;
     private GameObject randomEnemy;
 
     void Update()
     {
-        SpawnEnemy();
+        if (endlessMode)
+        {
+            EndlessSpawn();
+        }
+        else
+        {
+            SpawnEnemy();
+        }
     }
 
     private GameObject RandomEnemy()
@@ -32,6 +40,17 @@ public class EnemySpawner : MonoBehaviour
             }
         }
         return randomEnemy;
+    }
+
+    private void EndlessSpawn()
+    {
+        if (Time.time > nextSpawn)
+        {
+            nextSpawn = Time.time + spawnRate;
+            randPositionX = Random.Range(-50f, 50f);
+            spawnPosition = new Vector2(randPositionX, 50f);
+            Instantiate(RandomEnemy(), spawnPosition, Quaternion.identity, this.transform);
+        }
     }
 
     private void SpawnEnemy()
