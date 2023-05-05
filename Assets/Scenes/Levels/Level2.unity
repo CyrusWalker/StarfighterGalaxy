@@ -549,10 +549,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 85652148626185917, guid: 7f871258ab2e6044fa14833a3ee6ec87, type: 3}
-      propertyPath: m_Name
-      value: NextLevelButton
-      objectReference: {fileID: 0}
     - target: {fileID: 492018615450734594, guid: 7f871258ab2e6044fa14833a3ee6ec87, type: 3}
       propertyPath: m_Name
       value: GameManager
@@ -621,18 +617,6 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 475604575}
-    - target: {fileID: 5913443193143563610, guid: 7f871258ab2e6044fa14833a3ee6ec87, type: 3}
-      propertyPath: m_Name
-      value: MainMenuButton
-      objectReference: {fileID: 0}
-    - target: {fileID: 8282707440853582212, guid: 7f871258ab2e6044fa14833a3ee6ec87, type: 3}
-      propertyPath: m_Name
-      value: Text (TMP)
-      objectReference: {fileID: 0}
-    - target: {fileID: 8380643243437551090, guid: 7f871258ab2e6044fa14833a3ee6ec87, type: 3}
-      propertyPath: m_Name
-      value: GoToShopButton
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f871258ab2e6044fa14833a3ee6ec87, type: 3}
 --- !u!1001 &230915498
