@@ -8,13 +8,18 @@ public class ShootContinuous : MonoBehaviour, IUpdateSelectedHandler, IPointerDo
         private bool isPressed;
         private float timer;
         [SerializeField] private float timerMax = 1f;
-        [SerializeField] private Weapon1 weapon;
+        [SerializeField] private Weapon1 weapon1;
+        [SerializeField] private Weapon2 weapon2;
+        [SerializeField] private Weapon3 weapon3;
 
         public void OnUpdateSelected(BaseEventData data)
         {
             if (isPressed && timer <= 0)
             {
-                weapon.Shoot();
+                weapon1.Shoot();
+                weapon2.Shoot();
+                weapon3.Shoot();
+
                 timer = timerMax;
             }
         }
