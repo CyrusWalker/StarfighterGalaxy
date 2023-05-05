@@ -180,7 +180,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a4c0e483648d4573b3afc165a53b922, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  edgeOffset: 6
+  edgeOffset: 7
 --- !u!1001 &4320459376404902540
 PrefabInstance:
   m_ObjectHideFlags: 0

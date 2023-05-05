@@ -12,6 +12,8 @@ public class EnemySpawner : MonoBehaviour
     public int spawnCount = 0;
     public int spawnMax = 5;
     public bool endlessMode = false;
+    public float spawnRangeX = 40f;
+    public float spawnThresholdY = 50f;
 
     public List<GameObject> enemyList;
     private GameObject randomEnemy;
@@ -24,7 +26,7 @@ public class EnemySpawner : MonoBehaviour
         }
         else
         {
-            SpawnEnemy();
+            NormalSpawn();
         }
     }
 
@@ -46,25 +48,27 @@ public class EnemySpawner : MonoBehaviour
     {
         if (Time.time > nextSpawn)
         {
-            nextSpawn = Time.time + spawnRate;
-            randPositionX = Random.Range(-50f, 50f);
-            spawnPosition = new Vector2(randPositionX, 50f);
-            Instantiate(RandomEnemy(), spawnPosition, Quaternion.identity, this.transform);
+            SpawnEnemy();
         }
     }
 
-    private void SpawnEnemy()
+    private void NormalSpawn()
     {
         if (Time.time > nextSpawn)
         {
             if (spawnCount < spawnMax)
             {
-                nextSpawn = Time.time + spawnRate;
-                randPositionX = Random.Range(-50f, 50f);
-                spawnPosition = new Vector2(randPositionX, 50f);
-                Instantiate(RandomEnemy(), spawnPosition, Quaternion.identity, this.transform);
+                SpawnEnemy();
                 spawnCount++;
             }
         }
+    }
+    
+    private void SpawnEnemy()
+    {
+        nextSpawn = Time.time + spawnRate;
+        randPositionX = Random.Range(-spawnRangeX, spawnRangeX);
+        spawnPosition = new Vector2(randPositionX, spawnThresholdY);
+        Instantiate(RandomEnemy(), spawnPosition, Quaternion.identity, this.transform);
     }
 }
