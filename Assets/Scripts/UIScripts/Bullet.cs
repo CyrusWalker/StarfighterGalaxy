@@ -22,6 +22,8 @@ public class Bullet : MonoBehaviour
         bool pierce = GameObject.Find("Player 1").GetComponent<WeaponSelect>().pierce;
         if(collider.gameObject.tag == "Enemy") {
             Destroy(collider.gameObject);
+            ScoreManager.instance.AddPoints();
+            ScoreManager.instance.AddMoney();
             if (pierce == false)
                 Destroy(gameObject);
         }
