@@ -1411,22 +1411,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 522559716}
-    - target: {fileID: 3554644827015821110, guid: e8ea22d50645e8247ad03f10b4ba53fe, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Weapon3
-      objectReference: {fileID: 0}
     - target: {fileID: 3554644827325767751, guid: e8ea22d50645e8247ad03f10b4ba53fe, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 522559716}
-    - target: {fileID: 3554644827325767751, guid: e8ea22d50645e8247ad03f10b4ba53fe, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ArmorPierceTrue
-      objectReference: {fileID: 0}
-    - target: {fileID: 3554644827325767751, guid: e8ea22d50645e8247ad03f10b4ba53fe, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: WeaponSelect, Assembly-CSharp
-      objectReference: {fileID: 0}
     - target: {fileID: 3554644827786056774, guid: e8ea22d50645e8247ad03f10b4ba53fe, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1497,7 +1485,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3554644827786056774, guid: e8ea22d50645e8247ad03f10b4ba53fe, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 75.224976
+      value: 75.22485
       objectReference: {fileID: 0}
     - target: {fileID: 3554644827786056774, guid: e8ea22d50645e8247ad03f10b4ba53fe, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1519,50 +1507,30 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1502225337}
-    - target: {fileID: 3554644828167580350, guid: e8ea22d50645e8247ad03f10b4ba53fe, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: AddHeart
-      objectReference: {fileID: 0}
     - target: {fileID: 3554644828358746486, guid: e8ea22d50645e8247ad03f10b4ba53fe, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 522559716}
-    - target: {fileID: 3554644828358746486, guid: e8ea22d50645e8247ad03f10b4ba53fe, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Weapon2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3554644828467937876, guid: e8ea22d50645e8247ad03f10b4ba53fe, type: 3}
-      propertyPath: m_Name
-      value: MaxHealth+
-      objectReference: {fileID: 0}
-    - target: {fileID: 3554644828467937878, guid: e8ea22d50645e8247ad03f10b4ba53fe, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3554644828467937878, guid: e8ea22d50645e8247ad03f10b4ba53fe, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3554644828467937878, guid: e8ea22d50645e8247ad03f10b4ba53fe, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 522559712}
-    - target: {fileID: 3554644828467937878, guid: e8ea22d50645e8247ad03f10b4ba53fe, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
+    - target: {fileID: 6974814704867866288, guid: e8ea22d50645e8247ad03f10b4ba53fe, type: 3}
+      propertyPath: m_Color.b
+      value: 0.8301887
       objectReference: {fileID: 0}
-    - target: {fileID: 3554644828467937878, guid: e8ea22d50645e8247ad03f10b4ba53fe, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: IncreaseMaxHealth
+    - target: {fileID: 6974814704867866288, guid: e8ea22d50645e8247ad03f10b4ba53fe, type: 3}
+      propertyPath: m_Color.g
+      value: 0.20676395
       objectReference: {fileID: 0}
-    - target: {fileID: 3554644828467937878, guid: e8ea22d50645e8247ad03f10b4ba53fe, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: PlayerHealthScript, Assembly-CSharp
+    - target: {fileID: 6974814704867866288, guid: e8ea22d50645e8247ad03f10b4ba53fe, type: 3}
+      propertyPath: m_Color.r
+      value: 0.5772039
       objectReference: {fileID: 0}
-    - target: {fileID: 3554644828467937878, guid: e8ea22d50645e8247ad03f10b4ba53fe, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
+    - target: {fileID: 8730486868006858212, guid: e8ea22d50645e8247ad03f10b4ba53fe, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 522559712}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e8ea22d50645e8247ad03f10b4ba53fe, type: 3}
 --- !u!224 &976009074 stripped
@@ -1960,6 +1928,7 @@ GameObject:
   - component: {fileID: 1518186579}
   - component: {fileID: 1518186578}
   - component: {fileID: 1518186577}
+  - component: {fileID: 1518186581}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -2057,6 +2026,20 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1518186581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1518186576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ca86814c8c873b4db31259fc0563717, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreText: {fileID: 1971417029}
+  moneyText: {fileID: 1627835426}
 --- !u!1001 &1593506455
 PrefabInstance:
   m_ObjectHideFlags: 0
