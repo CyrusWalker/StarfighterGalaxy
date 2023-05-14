@@ -2578,10 +2578,6 @@ PrefabInstance:
       propertyPath: gameManager
       value: 
       objectReference: {fileID: 1155593130}
-    - target: {fileID: 5397943359710142945, guid: c1808b4a9f04de244be62f134c19e0f7, type: 3}
-      propertyPath: maxHitPoints
-      value: 100
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1808b4a9f04de244be62f134c19e0f7, type: 3}
 --- !u!1001 &1913678635

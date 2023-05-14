@@ -14,11 +14,16 @@ public class PlayerHealthScript : MonoBehaviour
     public HealthFrontSizer healthBar;
     public Animator anim;
     public Button PauseButton;
+    private const string MAX_HEALTH_KEY = "maxHealth";
+
+    void Awake()
+    {
+        maxHitPoints = PlayerPrefs.GetInt(MAX_HEALTH_KEY, 100);
+    }
 
     // Start is called before the first frame update
     void Start() {
         currentHitPoints = maxHitPoints;
-        //anim = GetComponent<Animator>();
     }
     
     void Update() {
