@@ -109,6 +109,7 @@ MonoBehaviour:
   weapon1: {fileID: 4391285442748906841}
   weapon2: {fileID: 4947451872423135210}
   weapon3: {fileID: 6020888400080762177}
+  pierce: 0
 --- !u!114 &2532079277584604897
 MonoBehaviour:
   m_ObjectHideFlags: 0
