@@ -48,6 +48,8 @@ public class PlayerHealthScript : MonoBehaviour
     void Die() {
         gameManager.Pause();
         anim.SetTrigger("Show");
+        GameObject settingsPanel = GameObject.Find("SettingsPanel");
+        settingsPanel.SetActive(false);
         PauseButton.enabled = false;
     }
 
