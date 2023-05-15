@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 2532079277584604902}
   - component: {fileID: 5397943359710142945}
   - component: {fileID: -3510687175563641890}
+  - component: {fileID: 733624896}
   m_Layer: 0
   m_Name: Player 1
   m_TagString: Player
@@ -81,7 +82,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: ca74a7fc0c727134990520429d47bc5f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -108,6 +109,7 @@ MonoBehaviour:
   weapon1: {fileID: 4391285442748906841}
   weapon2: {fileID: 4947451872423135210}
   weapon3: {fileID: 6020888400080762177}
+  pierce: 0
 --- !u!114 &2532079277584604897
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -121,7 +123,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Joystick: {fileID: 0}
-  moveSpeed: 100
+  moveSpeed: 65
 --- !u!50 &2532079277584604903
 Rigidbody2D:
   serializedVersion: 4
@@ -182,7 +184,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 0}
-  maxHitPoints: 200
+  maxHitPoints: 100
   currentHitPoints: 0
   hearts: {fileID: 0}
   InvulnerabilityTimerMax: 1.5
@@ -203,6 +205,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 5397943359710142945}
+--- !u!114 &733624896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2532079277584604909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a4c0e483648d4573b3afc165a53b922, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  edgeOffset: 8
 --- !u!1 &4391285442748906841
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -9,9 +10,13 @@ public class TextSlider : MonoBehaviour
     public TextMeshProUGUI numberText;
     public Slider slider;
 
+    void Awake()
+    {
+        SetNumberText();
+    }
+
     public void SetNumberText()
     {
-        
-        numberText.text = slider.value.ToString();
+        numberText.text = Mathf.Round(slider.value * 100).ToString();
     }
 }

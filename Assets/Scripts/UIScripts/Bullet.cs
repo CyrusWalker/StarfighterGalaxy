@@ -19,9 +19,13 @@ public class Bullet : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
+        bool pierce = GameObject.Find("Player 1").GetComponent<WeaponSelect>().pierce;
         if(collider.gameObject.tag == "Enemy") {
             Destroy(collider.gameObject);
-            Destroy(gameObject);
+            if (pierce == false)
+                Destroy(gameObject);
+            ScoreManager.instance.AddMoney();
+            ScoreManager.instance.AddPoints();
         }
 
     }

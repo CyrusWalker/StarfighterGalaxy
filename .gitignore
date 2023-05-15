@@ -17,6 +17,8 @@
 /Assets/Editor.meta
 /Assets/Scripts/.vscode/*
 /.vscode/*
+/Assets/.DS_Store/
+/.vsconfig/
 
 # Asset meta data should only be ignored when the corresponding asset is also ignored
 !/[Aa]ssets/**/*.meta
@@ -65,3 +67,6 @@ sysinfo.txt
 
 # Crashlytics generated file
 crashlytics-build.properties
+
+#ignore Mac DS_Store files
+.DS_Store

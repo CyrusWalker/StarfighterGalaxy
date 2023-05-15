@@ -7,18 +7,23 @@ public class PlayerHealthScript : MonoBehaviour
 {
     public GameManager gameManager;
     public int maxHitPoints = 100;
-    public int currentHitPoints;
+    public double currentHitPoints;
     public HeartManagerScript hearts;
     [SerializeField] private float InvulnerabilityTimerMax;
     public float InvulnerabilityTimer;
     public HealthFrontSizer healthBar;
     public Animator anim;
     public Button PauseButton;
+    private const string MAX_HEALTH_KEY = "maxHealth";
+
+    void Awake()
+    {
+        maxHitPoints = PlayerPrefs.GetInt(MAX_HEALTH_KEY, 100);
+    }
 
     // Start is called before the first frame update
     void Start() {
         currentHitPoints = maxHitPoints;
-        //anim = GetComponent<Animator>();
     }
     
     void Update() {
@@ -59,6 +64,13 @@ public class PlayerHealthScript : MonoBehaviour
 
     public void BecomeInvulnerable() {
         InvulnerabilityTimer = InvulnerabilityTimerMax;
+    }
+
+    public void IncreaseMaxHealth()
+    {
+        int tempmax = maxHitPoints;
+        maxHitPoints += 50;
+        currentHitPoints = currentHitPoints / tempmax * maxHitPoints;
     }
 
 }
