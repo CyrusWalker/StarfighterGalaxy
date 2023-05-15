@@ -951,7 +951,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3699321178601651753, guid: 1cb4b73578d1e65429441c89d39d5c84, type: 3}
       propertyPath: spawnMax
-      value: 10
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 3699321178601651753, guid: 1cb4b73578d1e65429441c89d39d5c84, type: 3}
+      propertyPath: spawnRate
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7449639768242142677, guid: 1cb4b73578d1e65429441c89d39d5c84, type: 3}
       propertyPath: m_Icon

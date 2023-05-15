@@ -13,6 +13,7 @@ public class DeleteAllLevelProgress : MonoBehaviour
         PlayerPrefs.DeleteKey("maxHealth");
         PlayerPrefs.DeleteKey("fireRate");
         PlayerPrefs.DeleteKey("money");
+        PlayerPrefs.DeleteKey("endlessMode");
         Debug.Log("Level Progress and Upgrades Deleted");
     }
 }
