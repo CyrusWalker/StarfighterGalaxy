@@ -951,7 +951,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3699321178601651753, guid: 1cb4b73578d1e65429441c89d39d5c84, type: 3}
       propertyPath: spawnMax
-      value: 5
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 3699321178601651753, guid: 1cb4b73578d1e65429441c89d39d5c84, type: 3}
       propertyPath: spawnRate
@@ -959,7 +959,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3699321178601651753, guid: 1cb4b73578d1e65429441c89d39d5c84, type: 3}
       propertyPath: spawnCount
-      value: 20
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7449639768242142677, guid: 1cb4b73578d1e65429441c89d39d5c84, type: 3}
       propertyPath: m_Icon
