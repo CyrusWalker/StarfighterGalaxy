@@ -1695,6 +1695,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: UpgradePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 3554644827786056775, guid: e8ea22d50645e8247ad03f10b4ba53fe, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3554644828167580350, guid: e8ea22d50645e8247ad03f10b4ba53fe, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -3058,6 +3062,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4737671004779842000, guid: 32dab40dbe8ae48478cf0cc7b974fb0c, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 2be19f571f78a6d4b81966a604321080, type: 3}
     - target: {fileID: 4737671004779842001, guid: 32dab40dbe8ae48478cf0cc7b974fb0c, type: 3}
       propertyPath: m_Name
       value: AudioManager
