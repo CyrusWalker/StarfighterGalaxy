@@ -13,7 +13,10 @@ public class AudioManager : MonoBehaviour
     public const string MASTER_KEY = "masterVolume";
     public const string MUSIC_KEY = "musicVolume";
     public const string SFX_KEY = "sfxVolume";
-
+    [SerializeField] private AudioClip menuMusic;
+    [SerializeField] private AudioClip levelMusic;
+    [SerializeField] private AudioClip shopMusic;
+    [SerializeField] private AudioSource source;
     private void Awake()
     {
         if (instance == null)
@@ -40,5 +43,23 @@ public class AudioManager : MonoBehaviour
         mixer.SetFloat(VolumeSettings.MIXER_MASTER, Mathf.Log10(masterVolume) * 20);
         mixer.SetFloat(VolumeSettings.MIXER_MUSIC, Mathf.Log10(musicVolume) * 20);
         mixer.SetFloat(VolumeSettings.MIXER_SFX, Mathf.Log10(sfxVolume) * 20);
+    }
+
+    public void PlayMenuMusic() {
+        instance.source.Stop();
+        instance.source.clip = menuMusic;
+        instance.source.Play();
+    }
+
+    public void PlayShopMusic() {
+        instance.source.Stop();
+        instance.source.clip = shopMusic;
+        instance.source.Play();
+    }
+
+    public void PlayLevelMusic() {
+        this.source.Stop();
+        this.source.clip = levelMusic;
+        this.source.Play();
     }
 }

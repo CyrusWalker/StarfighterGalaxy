@@ -8,6 +8,7 @@ public class ChangeScene : MonoBehaviour
     // public float delay;
     
     public int sceneID;
+    private AudioManager audioManager;
     public void MoveToScene()
     {
         // string levelName = "Level" + sceneID;
@@ -15,6 +16,13 @@ public class ChangeScene : MonoBehaviour
         // sceneID = PlayerPrefs.GetInt(levelName);
         Scene nextScene = SceneManager.GetSceneByBuildIndex(sceneID);
         SceneManager.LoadScene(sceneID); 
+        audioManager = FindObjectOfType<AudioManager>();
+        if(sceneID == 2) 
+            audioManager.PlayShopMusic();
+        else if (sceneID == 0 || sceneID == 1)
+            audioManager.PlayMenuMusic();
+        else
+            audioManager.PlayLevelMusic();
         StartCoroutine(SetActive(nextScene));
     }
     public IEnumerator SetActive(Scene scene)

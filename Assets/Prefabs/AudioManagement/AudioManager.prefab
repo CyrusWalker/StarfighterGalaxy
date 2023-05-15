@@ -142,3 +142,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mixer: {fileID: 24100000, guid: 8ec6ab58c0c55f44085fddd18ac4b226, type: 2}
+  menuMusic: {fileID: 8300000, guid: d4a3833239257324ab63a7a437c10078, type: 3}
+  levelMusic: {fileID: 8300000, guid: 2be19f571f78a6d4b81966a604321080, type: 3}
+  shopMusic: {fileID: 8300000, guid: cc6cab8c51deb8246b2d770a6c67a47d, type: 3}
+  source: {fileID: 4737671004779842000}
