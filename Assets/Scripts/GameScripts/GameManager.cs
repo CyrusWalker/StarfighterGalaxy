@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     private EnemySpawner EnemySpawner;
     public GameObject WinPanel;
     public float TimeScale;
+    public HeartManagerScript hearts;
     bool levelEnded = false;
     public void Start()
     {
@@ -25,7 +26,7 @@ public class GameManager : MonoBehaviour
         var enemies = GameObject.FindWithTag("Enemy");
         if (enemies == null && EnemySpawner.spawnCount == EnemySpawner.spawnMax)
         {
-            if (levelEnded == false)
+            if (levelEnded == false && hearts.GetHearts() != 0)
             {
                 EndLevel();
             }
