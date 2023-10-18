@@ -51,7 +51,7 @@ public class ShootContinuous : MonoBehaviour, IUpdateSelectedHandler, IPointerDo
         }
 
         public float GetFireRate() {
-            return timer;
+            return timerMax;
         }
     
     }

@@ -436,7 +436,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6b4e01533543294b816ed24270fdad4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  finalLevelIndex: 5
+  finalLevelIndex: 8
 --- !u!4 &283249124
 Transform:
   m_ObjectHideFlags: 0
@@ -478,7 +478,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   endlessModeButton: {fileID: 1546562067}
-  endlessMode: 0
+  endlessModeDevToggle: 0
 --- !u!1001 &318193706
 PrefabInstance:
   m_ObjectHideFlags: 0
