@@ -75,4 +75,9 @@ public class PlayerHealthScript : MonoBehaviour
         currentHitPoints = currentHitPoints / tempmax * maxHitPoints;
     }
 
+    public int HealthToScore()
+    {
+        int score = (int)currentHitPoints / maxHitPoints * 10;
+        return score;
+    }
 }
