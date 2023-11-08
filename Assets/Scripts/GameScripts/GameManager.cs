@@ -13,6 +13,8 @@ public class GameManager : MonoBehaviour
     public GameObject WinPanel;
     public float TimeScale;
     public HeartManagerScript hearts;
+    public ScoreManager sm;
+    public LevelTimer levelTimer;
     bool levelEnded = false;
     public void Start()
     {
@@ -41,6 +43,8 @@ public class GameManager : MonoBehaviour
         PauseButton.enabled = false;
         ShootButton.enabled = false;
         Joystick.enabled = false;
+        sm.SetScore();
+        levelTimer.levelEnded = true;
     }
 
     public void Pause()

@@ -24,8 +24,7 @@ public class Bullet : MonoBehaviour
             Destroy(collider.gameObject);
             if (pierce == false)
                 Destroy(gameObject);
-            ScoreManager.instance.AddMoney();
-            ScoreManager.instance.AddPoints();
+            MoneyManager.instance.AddMoney();
         }
 
     }
