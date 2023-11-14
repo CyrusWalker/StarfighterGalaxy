@@ -14,6 +14,7 @@ public class PlayerHealthScript : MonoBehaviour
     public HealthFrontSizer healthBar;
     public Animator anim;
     public Button PauseButton;
+    public AudioSource hitSound;
     private const string MAX_HEALTH_KEY = "maxHealth";
 
     void Awake()
@@ -35,6 +36,7 @@ public class PlayerHealthScript : MonoBehaviour
     public void TakeDamage(int damage) {
         if(InvulnerabilityTimer <= 0) {
             DealDamageToPlayer(damage);
+            hitSound.Play();
         }
     }
 
