@@ -6,7 +6,7 @@ public class Bullet : MonoBehaviour
 {
     public float speed = 20f;
     public Rigidbody2D bulletBody;
-    public int bulletDamage = 33;
+    public int bulletDamage = 40;
     [SerializeField] private EnemyHealth enemy;
 
     // Start is called before the first frame update
