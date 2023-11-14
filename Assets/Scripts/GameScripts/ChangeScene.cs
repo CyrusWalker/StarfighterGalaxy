@@ -5,8 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class ChangeScene : MonoBehaviour
 {
-    // public float delay;
-    
     public int sceneID;
     private AudioManager audioManager;
     public void MoveToScene()
@@ -35,5 +33,12 @@ public class ChangeScene : MonoBehaviour
         }
         SceneManager.SetActiveScene(scene);
         yield break;
+    }
+
+    public void Continue()
+    {
+        //default to Main Menu to "lock" the continue button until progress has been made
+        sceneID = PlayerPrefs.GetInt("levelAt", 0);
+        MoveToScene();
     }
 }
