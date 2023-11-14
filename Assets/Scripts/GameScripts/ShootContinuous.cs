@@ -7,7 +7,7 @@ public class ShootContinuous : MonoBehaviour, IUpdateSelectedHandler, IPointerDo
     {
         private bool isPressed;
         private float timer;
-        [SerializeField] private float timerMax = 1f;
+        [SerializeField] private float timerMax = 0.5f;
         [SerializeField] private Weapon1 weapon1;
         [SerializeField] private Weapon2 weapon2;
         [SerializeField] private Weapon3 weapon3;
@@ -16,7 +16,7 @@ public class ShootContinuous : MonoBehaviour, IUpdateSelectedHandler, IPointerDo
         //Load fire rate before scene load. This is the line that will sync the fire rate between the shop and the game
         void Awake()
         {
-            SetFireRate(PlayerPrefs.GetFloat(FIRE_RATE_KEY, 1f));
+            SetFireRate(PlayerPrefs.GetFloat(FIRE_RATE_KEY, 0.5f));
         }
 
         public void OnUpdateSelected(BaseEventData data)
@@ -38,11 +38,16 @@ public class ShootContinuous : MonoBehaviour, IUpdateSelectedHandler, IPointerDo
 
         public void OnPointerDown(PointerEventData data)
         {
+            timer = timerMax;
+            weapon1.Shoot();
+            weapon2.Shoot();
+            weapon3.Shoot();
             isPressed = true;
         }
         
         public void OnPointerUp(PointerEventData data)
         {
+            timer = timerMax;
             isPressed = false;
         }
 
