@@ -27,7 +27,6 @@ public class Bullet : MonoBehaviour
             enemy.TakeDamage(bulletDamage);
             if (pierce == false)
                 Destroy(gameObject);
-            MoneyManager.instance.AddMoney();
         }
     }
 
