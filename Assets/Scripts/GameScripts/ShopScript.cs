@@ -43,7 +43,7 @@ public class ShopScript : MonoBehaviour
             } else if (upgrade == 5) {
                 upgrades.UpgradeHealth();
             } else if (upgrade == 6) {
-                upgrades.UpgradeFireRate();
+                upgrades.UpgradeBulletDamage();
             } else {
                 Debug.Log("BAD UPGRADE PARAMETER");
             }

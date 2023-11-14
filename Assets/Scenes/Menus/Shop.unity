@@ -1837,17 +1837,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0ab1335e6e50f4cc6918a71cd45c9c76, type: 3}
---- !u!114 &1005363386 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4827137695837640122, guid: 0ab1335e6e50f4cc6918a71cd45c9c76, type: 3}
-  m_PrefabInstance: {fileID: 1005363385}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b6b7f708a4cdf9c4ba23bc99274482dd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1103384450
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2562,7 +2551,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 1140991742}
-  playerShooting: {fileID: 1005363386}
+  playerBullet: {fileID: 614859143407113845, guid: 77ff59184be51cd4a8e21e10940099c4, type: 3}
   playerWeapons: {fileID: 1140991741}
   playerHearts: {fileID: 1518344573}
 --- !u!1 &1257076926
@@ -3844,9 +3833,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Fire
-
-    Rate+'
+  m_text: Damage+
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3881,7 +3868,7 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 2
-  m_VerticalAlignment: 256
+  m_VerticalAlignment: 8192
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0

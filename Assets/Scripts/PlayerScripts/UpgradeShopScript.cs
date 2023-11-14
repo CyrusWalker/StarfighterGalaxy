@@ -6,11 +6,11 @@ using UnityEngine;
 public class UpgradeShopScript : MonoBehaviour
 {
     [SerializeField] private PlayerHealthScript playerHealth;
-    [SerializeField] private ShootContinuous playerShooting;
+    [SerializeField] private Bullet playerBullet;
     [SerializeField] private WeaponSelect playerWeapons;
     [SerializeField] private HeartManagerScript playerHearts;
     private const string MAX_HEALTH_KEY = "maxHealth";
-    private const string FIRE_RATE_KEY = "fireRate";
+    private const string BULLET_DAMAGE_KEY = "bulletDamage";
     private const string ARMOR_PIERCING_KEY = "armorPiercing";
     private const string WEAPONS_ARRAY_KEY = "numberOfBullets";
     private const string HEART_COUNT_KEY = "numberOfHearts";
@@ -19,9 +19,9 @@ public class UpgradeShopScript : MonoBehaviour
         PlayerPrefs.SetInt(MAX_HEALTH_KEY, playerHealth.maxHitPoints);
     }
 
-    public void UpgradeFireRate() {
-        playerShooting.SetFireRate(playerShooting.GetFireRate() * 0.9f);
-        PlayerPrefs.SetFloat(FIRE_RATE_KEY, playerShooting.GetFireRate());
+    public void UpgradeBulletDamage() {
+        playerBullet.SetDamage(playerBullet.GetDamage() + 10);
+        PlayerPrefs.SetFloat(BULLET_DAMAGE_KEY, playerBullet.GetDamage());
     }
 
     public void UpgradeArmorPiercing() {
