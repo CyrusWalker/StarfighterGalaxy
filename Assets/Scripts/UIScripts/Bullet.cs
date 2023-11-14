@@ -6,7 +6,7 @@ public class Bullet : MonoBehaviour
 {
     public float speed = 20f;
     public Rigidbody2D bulletBody;
-    public int damageStat = 33;
+    public int bulletDamage = 33;
     [SerializeField] private EnemyHealth enemy;
 
     // Start is called before the first frame update
@@ -24,11 +24,18 @@ public class Bullet : MonoBehaviour
         bool pierce = GameObject.Find("Player 1").GetComponent<WeaponSelect>().pierce;
         if(collider.gameObject.tag == "Enemy") {
             enemy = collider.gameObject.GetComponent<EnemyHealth>();
-            enemy.TakeDamage(damageStat);
+            enemy.TakeDamage(bulletDamage);
             if (pierce == false)
                 Destroy(gameObject);
             MoneyManager.instance.AddMoney();
         }
+    }
 
+    public void SetDamage(int damage) {
+        bulletDamage = damage;
+    }
+
+    public int GetDamage() {
+        return bulletDamage;
     }
 }
