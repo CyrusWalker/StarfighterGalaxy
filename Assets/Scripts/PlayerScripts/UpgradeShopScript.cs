@@ -21,7 +21,7 @@ public class UpgradeShopScript : MonoBehaviour
 
     public void UpgradeBulletDamage() {
         playerBullet.SetDamage(playerBullet.GetDamage() + 10);
-        PlayerPrefs.SetFloat(BULLET_DAMAGE_KEY, playerBullet.GetDamage());
+        PlayerPrefs.SetInt(BULLET_DAMAGE_KEY, playerBullet.GetDamage());
     }
 
     public void UpgradeArmorPiercing() {

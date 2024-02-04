@@ -2156,7 +2156,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f36467b3af75074ca2c5045df7700fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgrades: {fileID: 1255301911}
+  upgrades: {fileID: 0}
   moneyText: {fileID: 1278650511}
 --- !u!1 &1216562644
 GameObject:
@@ -2551,7 +2551,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 1140991742}
-  playerBullet: {fileID: 614859143407113845, guid: 77ff59184be51cd4a8e21e10940099c4, type: 3}
+  playerBullet: {fileID: 6749154714945451962, guid: 77ff59184be51cd4a8e21e10940099c4, type: 3}
   playerWeapons: {fileID: 1140991741}
   playerHearts: {fileID: 1518344573}
 --- !u!1 &1257076926
