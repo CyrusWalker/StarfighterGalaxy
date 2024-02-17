@@ -4,25 +4,16 @@ using UnityEngine;
 
 public class MenuButtons : MonoBehaviour
 {
-    public GameObject menuPanel;
-    public GameObject levelSelectPanel;
+    public GameObject settingsPanel;
     // Start is called before the first frame update
-    void Start()
+    public void ShowSettingsPanel()
     {
-        menuPanel.SetActive(true);
-        levelSelectPanel.SetActive(false);
+        settingsPanel.SetActive(true);
     }
 
-    public void ShowLevelPanel()
+    public void HideSettingsPanel()
     {
-        menuPanel.SetActive(false);
-        levelSelectPanel.SetActive(true);
-    }
-    
-    public void ShowMenuPanel()
-    {
-        menuPanel.SetActive(true);
-        levelSelectPanel.SetActive(false);
+        settingsPanel.SetActive(false);
     }
     
 }
