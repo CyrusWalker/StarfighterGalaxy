@@ -8,14 +8,19 @@ public class Bullet : MonoBehaviour
     public Rigidbody2D bulletBody;
     [SerializeField] public int bulletDamage; //DO NOT SET IN THE EDITOR
     [SerializeField] private EnemyHealth enemy;
-    private const string BULLET_DAMAGE_KEY = "bulletDamage";
+    [SerializeField] private WeaponSelect playerWeapon;
 
     // Start is called before the first frame update
+    void Awake() 
+    {
+        playerWeapon = GameObject.Find("Player 1").GetComponent<WeaponSelect>();
+    }
+
     void Start()
     {
         Debug.Log("called Start() on Bullet Object");
-        Debug.Log("Bullet damage from key is: " + PlayerPrefs.GetInt(BULLET_DAMAGE_KEY));
-        bulletDamage = PlayerPrefs.GetInt(BULLET_DAMAGE_KEY, 40);
+        Debug.Log("Bullet damage from key is: " + playerWeapon.bulletDamage);
+        bulletDamage = playerWeapon.bulletDamage;
         bulletBody.velocity = transform.up * speed;
     }
 

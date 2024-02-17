@@ -6,7 +6,6 @@ using UnityEngine;
 public class UpgradeShopScript : MonoBehaviour
 {
     [SerializeField] private PlayerHealthScript playerHealth;
-    [SerializeField] private Bullet playerBullet;
     [SerializeField] private WeaponSelect playerWeapons;
     [SerializeField] private HeartManagerScript playerHearts;
     private const string MAX_HEALTH_KEY = "maxHealth";
@@ -20,8 +19,8 @@ public class UpgradeShopScript : MonoBehaviour
     }
 
     public void UpgradeBulletDamage() {
-        playerBullet.SetDamage(playerBullet.GetDamage() + 10);
-        PlayerPrefs.SetInt(BULLET_DAMAGE_KEY, playerBullet.GetDamage());
+        playerWeapons.SetBulletDamage(playerWeapons.GetBulletDamage() + 10);
+        PlayerPrefs.SetInt(BULLET_DAMAGE_KEY, playerWeapons.GetBulletDamage());
     }
 
     public void UpgradeArmorPiercing() {

@@ -10,13 +10,17 @@ public class WeaponSelect : MonoBehaviour
     public GameObject weapon3;
     public bool pierce = false;
     public int gunCount;
+    public int bulletDamage;
     private const string ARMOR_PIERCING_KEY = "armorPiercing";
     private const string WEAPONS_ARRAY_KEY = "numberOfBullets";
+    private const string BULLET_DAMAGE_KEY = "bulletDamage";
 
     void Awake()
     {
         pierce = Convert.ToBoolean(PlayerPrefs.GetInt(ARMOR_PIERCING_KEY, Convert.ToInt32(false)));
         gunCount = PlayerPrefs.GetInt(WEAPONS_ARRAY_KEY, 1);
+        bulletDamage = PlayerPrefs.GetInt(BULLET_DAMAGE_KEY, 40);
+        Debug.Log("Weapon Select Bullet damge is: " + bulletDamage);
     }
 
     void Start()
@@ -54,5 +58,13 @@ public class WeaponSelect : MonoBehaviour
     public void ArmorPierceTrue()
     {
         pierce = true;
+    }
+
+    public int GetBulletDamage() {
+        return bulletDamage;
+    }
+    
+    public void SetBulletDamage(int damage) {
+        bulletDamage = damage;
     }
 }

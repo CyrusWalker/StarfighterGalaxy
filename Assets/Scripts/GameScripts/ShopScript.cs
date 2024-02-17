@@ -50,5 +50,10 @@ public class ShopScript : MonoBehaviour
         }
     }
 
+    public void AddMoney()
+    {
+        money += 100;
+    }
+
     
 }
