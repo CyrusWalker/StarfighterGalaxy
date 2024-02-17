@@ -406,6 +406,7 @@ GameObject:
   - component: {fileID: 81463517}
   - component: {fileID: 81463519}
   - component: {fileID: 81463518}
+  - component: {fileID: 81463520}
   m_Layer: 0
   m_Name: DamagePanel
   m_TagString: Untagged
@@ -473,6 +474,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 81463516}
   m_CullTransparentMesh: 1
+--- !u!114 &81463520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 81463516}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f36467b3af75074ca2c5045df7700fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upgrades: {fileID: 1255301911}
+  moneyText: {fileID: 1278650511}
+  purchaseButton: {fileID: 370236921}
+  purchaseText: {fileID: 831766692}
+  currentPrice: 100
 --- !u!1 &87951552
 GameObject:
   m_ObjectHideFlags: 0
@@ -815,7 +833,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 10
   m_Sprite: {fileID: 21300000, guid: cfed500a2659d944582effa014493ba7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -992,6 +1010,7 @@ GameObject:
   - component: {fileID: 361515629}
   - component: {fileID: 361515631}
   - component: {fileID: 361515630}
+  - component: {fileID: 361515632}
   m_Layer: 0
   m_Name: HeartsPanel
   m_TagString: Untagged
@@ -1058,6 +1077,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 361515628}
   m_CullTransparentMesh: 1
+--- !u!114 &361515632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 361515628}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f36467b3af75074ca2c5045df7700fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upgrades: {fileID: 1255301911}
+  moneyText: {fileID: 1278650511}
+  purchaseButton: {fileID: 582613629}
+  purchaseText: {fileID: 932565530}
+  currentPrice: 100
 --- !u!1 &370236919
 GameObject:
   m_ObjectHideFlags: 0
@@ -1143,7 +1179,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1166779114}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ShopScript, Assembly-CSharp
         m_MethodName: Purchase
         m_Mode: 3
@@ -1155,7 +1191,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1166779114}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ShopScript, Assembly-CSharp
         m_MethodName: ShopButton
         m_Mode: 1
@@ -1562,10 +1598,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1166779114}
+      - m_Target: {fileID: 361515632}
         m_TargetAssemblyTypeName: ShopScript, Assembly-CSharp
-        m_MethodName: Purchase
-        m_Mode: 3
+        m_MethodName: ShopButton
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1574,14 +1610,14 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1166779114}
+      - m_Target: {fileID: 361515632}
         m_TargetAssemblyTypeName: ShopScript, Assembly-CSharp
-        m_MethodName: ShopButton
-        m_Mode: 1
+        m_MethodName: Purchase
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -2024,7 +2060,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1166779114}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ShopScript, Assembly-CSharp
         m_MethodName: Purchase
         m_Mode: 3
@@ -2506,7 +2542,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1166779114}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ShopScript, Assembly-CSharp
         m_MethodName: Purchase
         m_Mode: 3
@@ -2518,7 +2554,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1166779114}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ShopScript, Assembly-CSharp
         m_MethodName: ShopButton
         m_Mode: 1
@@ -3158,6 +3194,7 @@ GameObject:
   - component: {fileID: 1056714827}
   - component: {fileID: 1056714829}
   - component: {fileID: 1056714828}
+  - component: {fileID: 1056714830}
   m_Layer: 0
   m_Name: MaxHealthPanel
   m_TagString: Untagged
@@ -3226,6 +3263,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1056714826}
   m_CullTransparentMesh: 1
+--- !u!114 &1056714830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1056714826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f36467b3af75074ca2c5045df7700fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upgrades: {fileID: 1255301911}
+  moneyText: {fileID: 1278650511}
+  purchaseButton: {fileID: 918368467}
+  purchaseText: {fileID: 87951554}
+  currentPrice: 100
 --- !u!1 &1070830012
 GameObject:
   m_ObjectHideFlags: 0
@@ -3456,7 +3510,6 @@ GameObject:
   - component: {fileID: 1166779111}
   - component: {fileID: 1166779113}
   - component: {fileID: 1166779112}
-  - component: {fileID: 1166779114}
   m_Layer: 0
   m_Name: Panel
   m_TagString: Untagged
@@ -3532,23 +3585,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1166779110}
   m_CullTransparentMesh: 1
---- !u!114 &1166779114
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1166779110}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f36467b3af75074ca2c5045df7700fc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  upgrades: {fileID: 1255301911}
-  moneyText: {fileID: 1278650511}
-  purchaseButton: {fileID: 0}
-  purchaseText: {fileID: 0}
-  currentPrice: 
 --- !u!1 &1188657158
 GameObject:
   m_ObjectHideFlags: 0
@@ -3972,7 +4008,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1166779114}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ShopScript, Assembly-CSharp
         m_MethodName: Purchase
         m_Mode: 3
@@ -3984,7 +4020,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1166779114}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ShopScript, Assembly-CSharp
         m_MethodName: ShopButton
         m_Mode: 1
@@ -4411,7 +4447,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1166779114}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ShopScript, Assembly-CSharp
         m_MethodName: Purchase
         m_Mode: 3
@@ -4423,7 +4459,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1166779114}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ShopScript, Assembly-CSharp
         m_MethodName: ShopButton
         m_Mode: 1
@@ -4484,6 +4520,7 @@ GameObject:
   - component: {fileID: 1513192898}
   - component: {fileID: 1513192900}
   - component: {fileID: 1513192899}
+  - component: {fileID: 1513192901}
   m_Layer: 0
   m_Name: BulletsPanel
   m_TagString: Untagged
@@ -4550,6 +4587,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1513192897}
   m_CullTransparentMesh: 1
+--- !u!114 &1513192901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1513192897}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f36467b3af75074ca2c5045df7700fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upgrades: {fileID: 1255301911}
+  moneyText: {fileID: 1278650511}
+  purchaseButton: {fileID: 1357403428}
+  purchaseText: {fileID: 1556291470}
+  currentPrice: 100
 --- !u!1001 &1518344572
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5407,6 +5461,7 @@ GameObject:
   - component: {fileID: 1713973651}
   - component: {fileID: 1713973653}
   - component: {fileID: 1713973652}
+  - component: {fileID: 1713973654}
   m_Layer: 0
   m_Name: PiercePanel
   m_TagString: Untagged
@@ -5473,6 +5528,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1713973650}
   m_CullTransparentMesh: 1
+--- !u!114 &1713973654
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1713973650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f36467b3af75074ca2c5045df7700fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upgrades: {fileID: 1255301911}
+  moneyText: {fileID: 1278650511}
+  purchaseButton: {fileID: 1260456672}
+  purchaseText: {fileID: 2060099015}
+  currentPrice: 100
 --- !u!1 &1717322376
 GameObject:
   m_ObjectHideFlags: 0
