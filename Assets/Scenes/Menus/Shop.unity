@@ -1600,18 +1600,6 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 361515632}
         m_TargetAssemblyTypeName: ShopScript, Assembly-CSharp
-        m_MethodName: ShopButton
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 361515632}
-        m_TargetAssemblyTypeName: ShopScript, Assembly-CSharp
         m_MethodName: Purchase
         m_Mode: 3
         m_Arguments:
@@ -3919,7 +3907,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 1140991742}
-  playerBullet: {fileID: 614859143407113845, guid: 77ff59184be51cd4a8e21e10940099c4, type: 3}
   playerWeapons: {fileID: 1140991741}
   playerHearts: {fileID: 1518344573}
 --- !u!1 &1260456670

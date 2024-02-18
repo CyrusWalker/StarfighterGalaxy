@@ -4,14 +4,23 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    public float speed = 20f;
+    public float speed = 200f;
     public Rigidbody2D bulletBody;
-    public int bulletDamage = 40;
+    [SerializeField] public int bulletDamage; //DO NOT SET IN THE EDITOR
     [SerializeField] private EnemyHealth enemy;
+    [SerializeField] private WeaponSelect playerWeapon;
 
     // Start is called before the first frame update
+    void Awake() 
+    {
+        playerWeapon = GameObject.Find("Player 1").GetComponent<WeaponSelect>();
+    }
+
     void Start()
     {
+        Debug.Log("called Start() on Bullet Object");
+        Debug.Log("Bullet damage from key is: " + playerWeapon.bulletDamage);
+        bulletDamage = playerWeapon.bulletDamage;
         bulletBody.velocity = transform.up * speed;
     }
 
