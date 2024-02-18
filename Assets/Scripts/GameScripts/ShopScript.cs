@@ -81,6 +81,5 @@ public class ShopScript : MonoBehaviour
         purchaseButton.interactable = true;
         purchaseText.text = currentPrice;
     }
-
     
 }
