@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7562209679014827401}
   - component: {fileID: 5255971108828967862}
   - component: {fileID: 2223567398330420852}
-  - component: {fileID: 5292902929795637392}
+  - component: {fileID: 3206448524926263928}
   m_Layer: 0
   m_Name: EnemySprite09
   m_TagString: Enemy
@@ -166,7 +166,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   edgeOffset: 7
---- !u!114 &5292902929795637392
+--- !u!114 &3206448524926263928
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -178,7 +178,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc0011d4edf62654b9563c61f6893799, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHitPoints: 99
+  maxHitPoints: 100
   currentHitPoints: 0
 --- !u!1001 &2754353903752227085
 PrefabInstance:
