@@ -15,8 +15,8 @@ GameObject:
   - component: {fileID: 70604614814328758}
   - component: {fileID: -4907496605881646986}
   - component: {fileID: -4556650251471698289}
-  - component: {fileID: -6016963764190496230}
-  m_Layer: 0
+  - component: {fileID: 8692979873888154951}
+  m_Layer: 6
   m_Name: EnemySprite05
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -104,7 +104,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speedY: 50
-  speedX: 50
+  speedX: 1
   yValMin: 0
   yValMax: 50
 --- !u!50 &3406669265432370703
@@ -138,7 +138,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -247,9 +247,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1771989322328035211, guid: f444067741eed2845a5d9e942f6178bc, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 3002088504690273458, guid: f444067741eed2845a5d9e942f6178bc, type: 3}
       propertyPath: m_Name
       value: EnemyWeapon2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3002088504690273458, guid: f444067741eed2845a5d9e942f6178bc, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6854153805270144690, guid: f444067741eed2845a5d9e942f6178bc, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7624953680581247406, guid: f444067741eed2845a5d9e942f6178bc, type: 3}
       propertyPath: m_LocalPosition.x
