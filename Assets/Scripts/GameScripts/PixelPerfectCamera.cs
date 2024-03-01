@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 public class PixelPerfectCamera : MonoBehaviour
 {
+    EdgeCollider2D edge;
     public static float pixelsToUnits = 1f;
     public static float scale = 1f;
     public static bool restarted = false;
@@ -48,7 +49,6 @@ public class PixelPerfectCamera : MonoBehaviour
         var bottomRight = (Vector2)mainCamera.ScreenToWorldPoint(new Vector3(mainCamera.pixelWidth, 0, mainCamera.nearClipPlane));
 
 
-        EdgeCollider2D edge;
         if(GetComponent<EdgeCollider2D>() == null) {
             edge = gameObject.AddComponent<EdgeCollider2D>();
         } else {
@@ -60,5 +60,33 @@ public class PixelPerfectCamera : MonoBehaviour
 
         edge.isTrigger = false;
     }
-    
+/*
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        Rigidbody2D collidingRB = collision.transform.GetComponent<Rigidbody2D>();
+        collidingRB.velocity = -collidingRB.velocity;
+    }
+
+    void OnTriggerEnter2D(Collider2D collider)
+    {
+        Rigidbody2D colliderRB = collider.GetComponent<Rigidbody2D>();
+        colliderRB.velocity = -colliderRB.velocity;
+    }
+
+    Vector2 GetClosestPoint(Vector2 position)
+    {
+        Vector2[] points = edge.points;
+        float shortestDistance = Vector2.Distance(position, points[0]);
+        Vector2 closestPoint = points[0];
+        foreach(Vector2 point in points)
+        {
+            if(Vector2.Distance(position, point) < shortestDistance)
+            {
+                shortestDistance = Vector2.Distance(position, point);
+                closestPoint = point;
+            }
+        }
+        return closestPoint;
+    }
+    */
 }

@@ -19,22 +19,26 @@ public class EnemyController : MonoBehaviour
     {
         yVal = Random.Range(yValMin,yValMax);
         enemyBody = GetComponent<Rigidbody2D>();
+        speedX = Random.Range(.5f, 1f);
     }
 
     // Update is called once per frame
     void Update()
     {
+        //enemyBody.position = Vector3.Lerp(pointA, pointB, time);
+        float time = Mathf.PingPong(Time.time * speedX, 1);
         
         if (transform.position.y > yVal)
         {
-            enemyBody.velocity = new Vector2(speedX, -speedY);
+            enemyBody.position = new Vector3(Mathf.SmoothStep(-35, 35, time), transform.position.y, 0);
         }
         else
         {
-            enemyBody.velocity = new Vector2(speedX, 0f);
+            enemyBody.position = new Vector3(Mathf.SmoothStep(-35, 35, time), yVal, 0);
         }
+        
     }
-
+/*
     private void OnTriggerEnter2D(Collider2D other)
     {
         speedX = -speedX;
@@ -44,6 +48,8 @@ public class EnemyController : MonoBehaviour
     {
         speedX = -speedX;
     }
+*/
+
 
     void OnBecameInvisible()
     {
