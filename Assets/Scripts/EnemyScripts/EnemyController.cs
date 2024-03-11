@@ -34,7 +34,8 @@ public class EnemyController : MonoBehaviour
         }
         else
         {
-            enemyBody.position = new Vector3(Mathf.SmoothStep(-35, 35, time), yVal, 0);
+            enemyBody.position = new Vector3(Mathf.SmoothStep(-35, 35, time), yVal, 0); 
+            //-35 and 35 are the sides of the screen
         }
         
     }
