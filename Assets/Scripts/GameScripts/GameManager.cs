@@ -49,17 +49,14 @@ public class GameManager : MonoBehaviour
 
     public void Pause()
     {
-        if(Time.timeScale == 0)
-        {
-            Time.timeScale = 1;
-            ShootButton.enabled = true;
-        }
+        Time.timeScale = 0;
+        ShootButton.enabled = false;
+    }
 
-        else
-        {
-            Time.timeScale = 0;
-            ShootButton.enabled = false;
-        }
+    public void Unpause()
+    {
+        Time.timeScale = 1;
+        ShootButton.enabled = true;
     }
 
     public void ResetLevel()
