@@ -14,9 +14,10 @@ public class EnemySpawner : MonoBehaviour
     public bool endlessMode = false;
     public float spawnRangeX = 40f;
     public float spawnThresholdY = 50f;
-
     public List<GameObject> enemyList;
     private GameObject randomEnemy;
+    public AudioClip[] EnemySpawnSFX;
+    public AudioSource Source;
 
     void Update()
     {
@@ -70,5 +71,13 @@ public class EnemySpawner : MonoBehaviour
         randPositionX = Random.Range(-spawnRangeX, spawnRangeX);
         spawnPosition = new Vector2(randPositionX, spawnThresholdY);
         Instantiate(RandomEnemy(), spawnPosition, Quaternion.identity, this.transform);
+        PlayEnemySFX();
+    }
+
+    private void PlayEnemySFX()
+    {
+        AudioClip RandomSFX = EnemySpawnSFX[Random.Range(0, EnemySpawnSFX.Length)];
+        Source.clip = RandomSFX;
+        Source.Play();
     }
 }
