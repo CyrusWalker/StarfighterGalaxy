@@ -15,7 +15,8 @@ GameObject:
   - component: {fileID: 2699227373627171362}
   - component: {fileID: -3146919496152083548}
   - component: {fileID: -7759976289767316939}
-  - component: {fileID: 4155497185283308889}
+  - component: {fileID: 1181678591522456535}
+  - component: {fileID: 8659551639731152087}
   m_Layer: 6
   m_Name: EnemySprite04
   m_TagString: Enemy
@@ -196,6 +197,102 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHitPoints: 100
   currentHitPoints: 0
+--- !u!82 &8659551639731152087
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 148091216209354169}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 3450702578629038849, guid: 8ec6ab58c0c55f44085fddd18ac4b226, type: 2}
+  m_audioClip: {fileID: 8300000, guid: 30937a75cf88add48be5d05ab167409e, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &8133106597628901376
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -247,37 +344,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1771989322328035211, guid: f444067741eed2845a5d9e942f6178bc, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 3002088504690273458, guid: f444067741eed2845a5d9e942f6178bc, type: 3}
       propertyPath: m_Name
       value: EnemyWeapon2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3002088504690273458, guid: f444067741eed2845a5d9e942f6178bc, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 6854153805270144690, guid: f444067741eed2845a5d9e942f6178bc, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 7624953680581247406, guid: f444067741eed2845a5d9e942f6178bc, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 7624953680581247406, guid: f444067741eed2845a5d9e942f6178bc, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -8
-      objectReference: {fileID: 0}
-    - target: {fileID: 8062707200254191480, guid: f444067741eed2845a5d9e942f6178bc, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8062707200254191480, guid: f444067741eed2845a5d9e942f6178bc, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f444067741eed2845a5d9e942f6178bc, type: 3}
