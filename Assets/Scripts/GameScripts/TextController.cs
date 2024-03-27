@@ -9,13 +9,10 @@ public class TextController : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI displayText;
     [SerializeField] private String dialogue;
+    [SerializeField] private float speechSpeed;
     private IEnumerator coroutine;
+
     // Start is called before the first frame update
-    void Awake()
-    {
-        dialogue = "This is a test string, it should print character-by-character.";
-    }
-    
     void Start()
     {
         coroutine = RevealTextSlowly(displayText, dialogue);
@@ -31,8 +28,8 @@ public class TextController : MonoBehaviour
     private IEnumerator RevealTextSlowly(TextMeshProUGUI displayText, String dialogue)
     {
         for(int i = 0; i < dialogue.Length; i++) {
-            yield return displayText.text += dialogue[i];
-            yield return new WaitForSeconds(0.01f);
+            displayText.text += dialogue[i];
+            yield return new WaitForSeconds(speechSpeed);
         }
         
         yield return null;
